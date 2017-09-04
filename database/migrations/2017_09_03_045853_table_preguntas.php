@@ -14,13 +14,18 @@ class TablePreguntas extends Migration
     public function up()
     {
         
-        Schema::create('preguntas', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('preguntas_generales', function (Blueprint $table) {
+            $table->integer('id')->primary();
             $table->string('variable',20);
             $table->text('pregunta');
-            $table->rememberToken();
-            $table->timestamps();
-            //
+            $table->string('option',50);
+            $table->text('html');
+            $table->text('defecto');
+            $table->string('class',200);
+            $table->string('required',10);
+            $table->string('placeholder',30);
+            
+              //
         });
         
     }

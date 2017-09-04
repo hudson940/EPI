@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('master');
+
 });
+
+
+Route::resource('usuarios', 'UsersController');
+Route::resource('preguntas','PreguntasController');
+
+Route::resource('formulario', 'FormularioController');
+
+
