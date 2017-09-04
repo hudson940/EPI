@@ -12,7 +12,7 @@ class PreguntasController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   $preguntas=Pregunta::orderBy('id','ASC')->paginate(10);
+    {   $preguntas=Pregunta::orderBy('id','ASC')->paginate(50);
         return view('preguntas')->with('preguntas',$preguntas);
     }
 
@@ -37,6 +37,7 @@ class PreguntasController extends Controller
         $pregunta= new Pregunta($request->all());
         $pregunta->save();
         flash("La pregunta numero ".$pregunta->id." ha sido creada");
+        return redirect()->route('/preguntas.index');
     }
 
     /**

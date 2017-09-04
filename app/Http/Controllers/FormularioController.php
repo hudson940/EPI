@@ -15,7 +15,7 @@ class FormularioController extends Controller
      */
     public function index()
 
-    {   $preguntas=Pregunta::orderBy('id','ASC')->paginate(15);
+    {   $preguntas=Pregunta::orderBy('id','ASC')->paginate(150);
         
         return view('formulario')->with('preguntas',$preguntas);
     }

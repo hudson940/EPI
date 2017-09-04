@@ -87,7 +87,7 @@
                     
                     {!! Form::close() !!}
                      @include('flash::message')
-                    
+                     
     </div>
 <div class="card">
                     <div class="card-close">
