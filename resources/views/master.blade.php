@@ -78,7 +78,7 @@
               <ul id="dashvariants" class="collapse list-unstyled">
                 <li><a href="/formulario">General</a></li>
                 <li><a href="#">Actividad Agricola</a></li>
-              <li><a href="#"></a>Actividad Pecuaria</li>
+              <li><a href="#">Actividad Pecuaria</a></li>
                 <li><a href="#">Actividad no Agropecuaria</a></li>
               </ul>
             </li>
