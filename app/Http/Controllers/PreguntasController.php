@@ -34,7 +34,9 @@ class PreguntasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $pregunta= new Pregunta($request->all());
+        $pregunta->save();
+        flash("La pregunta numero ".$pregunta->id." ha sido creada");
     }
 
     /**
