@@ -57,7 +57,7 @@
                         <div class="col-sm-9">
                        {!! Form::radio('required', 'required','required') !!} Si
                        
-                       {!! Form::radio('no', null) !!} No
+                       {!! Form::radio('required', 'no') !!} No
                        
                       </div></div>
                        <div class="form-group row">
