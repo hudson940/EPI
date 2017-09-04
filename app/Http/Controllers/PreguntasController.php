@@ -37,7 +37,7 @@ class PreguntasController extends Controller
         $pregunta= new Pregunta($request->all());
         $pregunta->save();
         flash("La pregunta numero ".$pregunta->id." ha sido creada");
-        return redirect()->route('/preguntas');
+        return redirect()->route('preguntas.index');
     }
 
     /**

@@ -2,7 +2,7 @@
 @section ('titulo','Preguntas')
 @section('dasboard','Preguntas')
 @section ('contenido')
-
+ 
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -47,8 +47,9 @@
                      <div class="form-group row">
                         {!! Form::label('defecto', 'Lista de opciones', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">
-                        {!! Form::textarea('defecto', '<option value="1">texto 1</option> <option value="2">texto 2</option><option value="3">texto 3</option> <option value="4">texto 4</option>', ['class'=>'form-control', 'placeholder' =>'<option value="1">texto 1</option> <option value="2">texto 2</option>
+                      {!! Form::textarea('defecto', '<option value="1">texto 1</option> <option value="2">texto 2</option><option value="3">texto 3</option> <option value="4">texto 4</option>', ['class'=>'form-control', 'placeholder' =>'<option value="1">texto 1</option> <option value="2">texto 2</option>
 ']) !!} <span class="help-block-none">Remplace el numero en el value por el numero de la opcion y el 'texto' por el nombre de la opcion</span>
+                    
                         </div>
                       </div>
                       <div class="form-group row">
@@ -115,7 +116,7 @@
                         @foreach ($preguntas as $pregunta)
                           <tr>
                             <th scope="row"><a href="#">{{$pregunta->id}}</th>
-                            <th>{{'required'}}</th>
+                            <th>{{$pregunta->variable}}</th>
                             <td>{{$pregunta->pregunta}}</td>
                             <td>{{$pregunta->option}}</td>
                             <td>@if ($pregunta->required=='required') <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </button> @else  <button class="btn btn-sm btn-success"><i class="fa fa-check"></i> </button> @endif
@@ -133,5 +134,5 @@
                     </div>
                   </div>
 
-                 
+               
 @endsection
