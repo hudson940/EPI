@@ -77,8 +77,9 @@
             <li><a href="#dashvariants" aria-expanded="false" data-toggle="collapse"> <i class="icon-screen"></i>Formulario </a>
               <ul id="dashvariants" class="collapse list-unstyled">
                 <li><a href="/formulario">General</a></li>
-                <li><a href="#">option</a></li>
-              
+                <li><a href="#">Actividad Agricola</a></li>
+              <li><a href="#"></a>Actividad Pecuaria</li>
+                <li><a href="#">Actividad no Agropecuaria</a></li>
               </ul>
             </li>
              <li><a href="/preguntas" > <i class="icon-padnote"></i>Preguntas </a></li>
