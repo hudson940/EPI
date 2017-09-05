@@ -15,11 +15,26 @@ class FormularioController extends Controller
      */
     public function index()
 
-    {   $preguntas=Pregunta::orderBy('id','ASC')->paginate(150);
+    {   $preguntas=Pregunta::where('class','general')->paginate(150);
         
         return view('formulario')->with('preguntas',$preguntas);
     }
+    public function cultivos()
+    {
+        $preguntasE=Pregunta::where('class','agricola')->paginate(50);
+        return view('formulario-cultivos')->with('preguntasE',$preguntasE);
+    }
+    public function pecuario()
+    {
+        $preguntasE=Pregunta::where('class','pecuaria')->paginate(50);
+        return view('formulario-pecuario')->with('preguntasE',$preguntasE);
+    }
 
+    public function noAgropecuario()
+    {
+        $preguntasE=Pregunta::where('class','agricola')->paginate(50);
+        return view('formulario-no-agropecuario')->with('preguntasE',$preguntasE);
+    }
     /**
      * Show the form for creating a new resource.
      *

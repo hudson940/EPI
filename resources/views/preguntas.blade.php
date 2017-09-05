@@ -26,7 +26,7 @@
                       <div class="form-group row">
                         {!! Form::label('variable', 'Variable', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">
-                        {!! Form::text('variable', null, ['class'=>'form-control form-control-success', 'placeholder' =>'# de pregunta+iniciales']) !!}
+                        {!! Form::text('variable', null, ['class'=>'form-control form-control-success', 'placeholder' =>'# de pregunta+iniciales','required']) !!}
                         </div>
                       </div>
                       
@@ -34,13 +34,13 @@
                      <div class="form-group row">
                         {!! Form::label('pregunta', 'Pregunta Completa', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">
-                        {!! Form::textarea('pregunta', null, ['class'=>'form-control form-control-success', 'placeholder' =>'#+pregunta Ej. "1. codigo del predio"']) !!}
+                        {!! Form::textarea('pregunta', null, ['class'=>'form-control form-control-success', 'placeholder' =>'#+pregunta Ej. "1. codigo del predio"','required']) !!}
                         </div>
                       </div>
                       <div class="form-group row">
                         {!! Form::label('option', 'Tipo de campo formulario', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">         
-                        {!! Form::select('option',['text'=>'Texto o numero','select'=>'Lista desplegable','radio'=>'Si o No','checkbox','checklist'], null, ['class'=>'form-control form-control-success','required','placeholder'=>'Seleccione...']) !!}                                          
+                        {!! Form::select('option',['text'=>'Texto o numero','select'=>'Lista desplegable','radio'=>'Si o No','checkbox'=>'checklist'], null, ['class'=>'form-control form-control-success','required','placeholder'=>'Seleccione...']) !!}                                          
                         </div>
                       </div>
                                            
@@ -67,11 +67,14 @@
                         </div>
                       </div>
                        <div class="form-group row">
-                        {!! Form::label('class', 'Class', ['class'=>'sr-only col-sm-3 from-control-label']) !!}
+                        {!! Form::label('class', 'Categoria', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">
-                        {!! Form::text('class',' nada', ['class'=>'sr-only form-control form-control-success', 'placeholder' =>'']) !!}
+                        {!! Form::select('class',['general'=>'General','agricola'=>'Inventario agricola','pecuaria'=>'Otras actividades pecuarias','noagropecuario'=>'Actividades no agropecuarias'], 'general',['class'=>'form-control form-control-success', 'placeholder' =>'']) !!}
                         </div>
                       </div>
+                      
+                     
+                      
                        <div class="form-group row">
                         {!! Form::label('placeholder', 'PlaceHolder', ['class'=>'sr-only col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">

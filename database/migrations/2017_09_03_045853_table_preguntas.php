@@ -38,7 +38,7 @@ class TablePreguntas extends Migration
     public function down()
     {
         
-        Schema::drop('preguntas');
+        Schema::drop('preguntas_generales');
         
     }
 }
