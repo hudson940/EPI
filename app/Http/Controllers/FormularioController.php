@@ -35,6 +35,11 @@ class FormularioController extends Controller
         $preguntasE=Pregunta::where('class','agricola')->paginate(50);
         return view('formulario-no-agropecuario')->with('preguntasE',$preguntasE);
     }
+    public function forestal()
+    {
+        $preguntasE=Pregunta::where('class','agricola')->paginate(50);
+        return view('formulario-forestal')->with('preguntasE',$preguntasE);
+    }
     /**
      * Show the form for creating a new resource.
      *

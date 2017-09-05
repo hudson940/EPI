@@ -31,6 +31,13 @@
     <div class="page home-page">
       <!-- Main Navbar-->
       <header class="header">
+ @guest
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('register') }}">Register</a></li>
+                        @else
+                            
+                                   
+
         <nav class="navbar">
           <!-- Search Box-->
           <div class="search-box">
@@ -54,7 +61,12 @@
                 <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
 
                         <!-- Logout    -->
-                <li class="nav-item"><a href="login" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
+                <li class="nav-item"><a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
+                                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
               </ul>
             </div>
           </div>
@@ -68,8 +80,8 @@
           <div class="sidebar-header d-flex align-items-center">
             <div class="avatar"><img src="img/logounillanos.png" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title">
-              <h1 class="h4">Unillanos</h1>
-              <p>Administracion</p>
+              <h1 class="h4">{{ Auth::user()->name }}</h1>
+              <p>Unillanos</p>
             </div>
           </div>
           <!-- Sidebar Navidation Menus--><span class="heading">Menu</span>
@@ -99,7 +111,7 @@
             </div>
           </header>
           @yield('contenido')
-
+ @endguest
             <!-- Page Footer-->
           <footer class="main-footer">
             <div class="container-fluid">

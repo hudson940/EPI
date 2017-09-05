@@ -3,8 +3,28 @@
 @section('dasboard','EPI Sanjuanito')
 @section ('contenido')
 <section class="dashboard-counts no-padding-bottom">
+
 <div class="container-fluid">
               <div class="row bg-white has-shadow">
+              <div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Dashboard</div>
+
+                <div class="panel-body">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                 <!-- Item -->
                 <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">

@@ -2,7 +2,7 @@
 @section ('titulo','Preguntas')
 @section('dasboard','Preguntas')
 @section ('contenido')
- 
+ @include('flash::message')
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -90,7 +90,7 @@
                     </div>
                     
                     {!! Form::close() !!}
-                     @include('flash::message')
+                     
                      
     </div>
 <div class="card">

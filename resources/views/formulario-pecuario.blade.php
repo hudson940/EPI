@@ -2,6 +2,7 @@
 @section('titulo','Formulario Pecuario')
 @section('dashboard','Formulario/Pecuario')
 @section('contenido')
+ @include('flash::message')
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -56,12 +57,12 @@
                       
                       <div class="form-group row">       
                           <div class="col-sm-9 offset-sm-3">
-                      <input class="btn btn-primary" value="Registrar Formulario" type="submit">
+                      <input class="btn btn-primary" value="Registrar Actividad" type="submit">
                        </div>
                         </div>
                                                   
                     {!! Form::close() !!}
-                     @include('flash::message')     
+                      
                      </div>
 </div>
 @endsection

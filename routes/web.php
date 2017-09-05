@@ -15,10 +15,10 @@
 Route::get('welcome', function () {
     return view('welcome');
 });
-Route::get('/','indexController@index');
-Route::get('index','indexController@index');
-Route::resource('/login','Auth\LoginController');
 
+Route::get('index','indexController@index')->name('index');
+Route::resource('/login','Auth\LoginController');
+Route::get('formulario-forestal','FormularioController@forestal')->name('formularo.cultivos');
 Route::get('formulario-cultivos','FormularioController@cultivos')->name('formularo.cultivos');
 Route::get('formulario-pecuario','FormularioController@pecuario')->name('formulario.pecuario');
 Route::get('formulario-no-agropecuario','FormularioController@noAgropecuario')->name('formulario.nopec');
@@ -28,3 +28,8 @@ Route::resource('formularios', 'FormulariosController');
 Route::resource('formulario', 'FormularioController');
 
 
+
+Auth::routes();
+
+Route::get('/', 'HomeController@index');
+Route::get('/home', 'HomeController@index');

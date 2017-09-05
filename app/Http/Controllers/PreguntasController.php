@@ -74,7 +74,15 @@ class PreguntasController extends Controller
     public function update(Request $request, $id)
     {
         $pregunta = Pregunta::find($id);
-        $pregunta= $request->all();
+        $pregunta->id= $request->id;
+        $pregunta->variable=$request->variable;
+        $pregunta->pregunta=$request->pregunta;
+        $pregunta->option=$request->option;
+        $pregunta->html=$request->html;
+        $pregunta->defecto=$request->defecto;
+        $pregunta->class=$request->class;
+        $pregunta->required=$request->required;
+        $pregunta->placeholder=$request->placeholder;
         $pregunta->save();
         flash("La pregunta numero ".$pregunta->id." ha sido editada");
         return redirect()->route('preguntas.index');
