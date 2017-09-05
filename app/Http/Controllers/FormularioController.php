@@ -32,12 +32,12 @@ class FormularioController extends Controller
 
     public function noAgropecuario()
     {
-        $preguntasE=Pregunta::where('class','agricola')->paginate(50);
+        $preguntasE=Pregunta::where('class','noagropecuaria')->paginate(50);
         return view('formulario-no-agropecuario')->with('preguntasE',$preguntasE);
     }
     public function forestal()
     {
-        $preguntasE=Pregunta::where('class','agricola')->paginate(50);
+        $preguntasE=Pregunta::where('class','forestal')->paginate(50);
         return view('formulario-forestal')->with('preguntasE',$preguntasE);
     }
     /**

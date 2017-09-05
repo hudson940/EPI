@@ -69,6 +69,14 @@
                       {!! Form::radio($pregunta->variable, '1','1') !!} (Si <a href="{{'formulario-pecuario'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=500'); return false;">Relacione Actividades</a>)
                        
                        {!! Form::radio($pregunta->variable, '0') !!} <span>(No, continue)</span> </div></div>
+
+                       @elseif ($pregunta->option=="noagropecuario")
+                      <div class="form-group row">
+                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                      <div class="col-sm-9">
+                      {!! Form::radio($pregunta->variable, '1','1') !!} (Si <a href="{{'formulario-no-agropecuario'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=500'); return false;">Relacione Actividades</a>)
+                       
+                       {!! Form::radio($pregunta->variable, '0') !!} <span>(No, continue)</span> </div></div>
                     @endif 
                      
                       
