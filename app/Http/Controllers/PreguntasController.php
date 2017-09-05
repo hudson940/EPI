@@ -59,7 +59,9 @@ class PreguntasController extends Controller
      */
     public function edit($id)
     {
-        //
+        $pregunta= Pregunta::find($id);
+        return view('editar-pregunta')->with('pregunta',$pregunta);
+
     }
 
     /**
@@ -71,7 +73,11 @@ class PreguntasController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $pregunta = Pregunta::find($id);
+        $pregunta= $request->all();
+        $pregunta->save();
+        flash("La pregunta numero ".$pregunta->id." ha sido editada");
+        return redirect()->route('preguntas.index');
     }
 
     /**

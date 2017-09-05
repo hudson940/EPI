@@ -45,7 +45,7 @@
                       </div>
                                            
                      <div class="form-group row">
-                        {!! Form::label('defecto', 'Lista de opciones', ['class'=>'col-sm-3 from-control-label']) !!}
+                        {!! Form::label('defecto', 'Si eligio Lista de opciones', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">
                       {!! Form::textarea('defecto', '<option value="1">texto 1</option> <option value="2">texto 2</option><option value="3">texto 3</option> <option value="4">texto 4</option>', ['class'=>'form-control', 'placeholder' =>'<option value="1">texto 1</option> <option value="2">texto 2</option>
 ']) !!} <span class="help-block-none">Remplace el numero en el value por el numero de la opcion y el 'texto' por el nombre de la opcion</span>
@@ -124,7 +124,7 @@
                             <td>{{$pregunta->option}}</td>
                             <td>@if ($pregunta->required=='required') <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </button> @else  <button class="btn btn-sm btn-success"><i class="fa fa-check"></i> </button> @endif
                             <td> 
-								  <button class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </button>
+	                           <a href="{{route('preguntas.edit',$pregunta->id)}}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </button>
 								  
 													  
                             </td>
