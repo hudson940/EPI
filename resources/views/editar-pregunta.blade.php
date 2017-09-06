@@ -3,6 +3,9 @@
 @section('dasboard','Formulario de Edicion')
 @section ('contenido')
   @include('flash::message')
+  @if ( Auth::user()->rol=='estudiante')
+        <div class="card"> <h3>  No esta autorizado para editar preguntas </h3></div>
+        return redirect()->route('index'); @else 
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -13,7 +16,7 @@
                     <div class="card-header d-flex align-items-center">
                       <h3 class="h4">Editar Pregunta {{$pregunta->id}}</h3>
                     </div>
-        <div class="card-body">
+        <div class="card-body"> 
                      
                     
                       {!! Form::open(['route'=> ['preguntas.update',$pregunta],'method'=>'PUT','class'=>'form-horizontal'])!!}
@@ -92,5 +95,5 @@
                     
                      
     </div>
-       
+       @endif
 @endsection

@@ -29,7 +29,7 @@
 
                             <div class="col-md-6">
                                 <select id="rol" class="form-control" name="rol" value="{{ old('rol') }}" required >
-                                <option selected="selected" value="">Seleccione...</option><option value="investigador">Investigador</option><option value="estudiante">Estudiante</option></select>
+                                <option selected="selected" value="">Seleccione...</option><option value="estudiante">Estudiante</option></select>
                                 </select>
                                 @if ($errors->has('rol'))
                                     <span class="help-block">

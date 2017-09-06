@@ -2,6 +2,9 @@
 @section('titulo','Usuarios')
 @section('dashboard','Usuarios')
 @section('contenido')
+@if ( Auth::user()->rol=='estudiante')
+        <div class="card"> <h3> No esta autorizado para editar usuarios</h3></div>
+       @else 
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -94,5 +97,5 @@
                       {!!$Users->links()!!}
                     </div>
                   </div>
-                
+              @endif  
 @endsection

@@ -12,7 +12,7 @@
 */
 
 
-Route::get('welcome', function () {
+Route::get('/', function () {
     return view('landing.landing');
 });
 
@@ -31,5 +31,5 @@ Route::resource('formulario', 'FormularioController');
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index');
+
 Route::get('/home', 'HomeController@index');

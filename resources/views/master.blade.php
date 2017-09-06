@@ -1,3 +1,5 @@
+ @guest redirect()->route('landing.landing') @else
+                            
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,11 +33,9 @@
     <div class="page home-page">
       <!-- Main Navbar-->
       <header class="header">
- @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
-                            
+
+                           
+                        
                                    
 
         <nav class="navbar">
@@ -111,7 +111,7 @@
             </div>
           </header>
           @yield('contenido')
- @endguest
+
             <!-- Page Footer-->
           <footer class="main-footer">
             <div class="container-fluid">
@@ -150,3 +150,4 @@
     </script>
   </body>
 </html>
+ @endguest

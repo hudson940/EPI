@@ -81,7 +81,7 @@
                             </div>
                             <div class="top-big-link wow fadeInUp">
                             	<a class="btn btn-link-1" href="{{ route('register') }}">Registrarse</a>
-                            	<a class="btn btn-link-2 scroll-link" href="#features">Leer Mas</a>
+                            	<a class="btn btn-link-2" href="{{ route('login') }}">Ingresar</a>
                             </div>
                         </div>
                     </div>
@@ -229,37 +229,36 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-12 how-it-works section-description wow fadeIn">
-	                    <h2><strong>How</strong> it works</h2>
+	                    <h2><strong>Como </strong> Funciona</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                </div>
 	            </div>
 	            <div class="row">
                 	<div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInUp">
 	                	<div class="how-it-works-box-icon">1</div>
-	                    <h3>Sign up</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
+	                    <h3>Marco Teorico</h3>
+	                    <p>Recopilacion de informacion y estado del arte</p>                    </div>
                     <div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInDown">
 	                	<div class="how-it-works-box-icon">2</div>
-	                    <h3>Make payment</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+     <h3>Diseño</h3>
+	                    <p>Diseño de los instrumentos y metodos</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInUp">
 	                	<div class="how-it-works-box-icon">3</div>
-	                    <h3>Log in</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+	                    <h3>Aplicacion</h3>
+	                    <p>Trabajo de campo y recoleccion de informacion</p>
                     </div>
                     <div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInDown">
 	                	<div class="how-it-works-box-icon">4</div>
-	                    <h3>Start learning</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+	                    <h3>Tabulacion y analisis</h3>
+	                    <p>Tabulacion de la informacion y analisis descriptivo e inferencial de los resultados</p>
                     </div>
 	            </div>
 	            <div class="row">
 	            	<div class="col-sm-12 section-bottom-button wow fadeInUp">
-                        <a class="btn btn-link-1 scroll-link" href="#top-content">Sign up now</a>
+                        <a class="btn btn-link-1 scroll-link" href="{{ route('register')}}">Registrate</a>
 	            	</div>
 	            </div>
 	        </div>
@@ -270,7 +269,7 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-12 testimonials section-description wow fadeIn">
-	                    <h2><strong>Our</strong> clients</h2>
+	                    <h2><strong>Director</strong> y Codirector</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                </div>
 	            </div>
@@ -285,10 +284,8 @@
 	                				</div>
 	                				<div class="testimonial-text">
 		                                <p>
-		                                	"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-		                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-		                                	Lorem ipsum dolor sit amet, consectetur..."<br>
-		                                	<a href="#">Lorem Ipsum, dolor.co.uk</a>
+		                                	Hernando Castro<br>
+		                                	<a href="#"></a>
 		                                </p>
 	                                </div>
 	                			</div>
@@ -298,40 +295,12 @@
 	                				</div>
 	                				<div class="testimonial-text">
 		                                <p>
-		                                	"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
-		                                	ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-		                                	lobortis nisl ut aliquip ex ea commodo consequat..."<br>
-		                                	<a href="#">Minim Veniam, nostrud.com</a>
+		                                	Javier Diaz<br>
+		                                	<a href="#"></a>
 		                                </p>
 	                                </div>
 	                			</div>
-	                			<div role="tabpanel" class="tab-pane fade" id="tab3">
-	                				<div class="testimonial-image">
-	                					<img src="assets/img/testimonials/3.jpg" alt="" data-at2x="assets/img/testimonials/3.jpg">
-	                				</div>
-	                				<div class="testimonial-text">
-		                                <p>
-		                                	"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-		                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-		                                	Lorem ipsum dolor sit amet, consectetur..."<br>
-		                                	<a href="#">Lorem Ipsum, dolor.co.uk</a>
-		                                </p>
-	                                </div>
-	                			</div>
-	                			<div role="tabpanel" class="tab-pane fade" id="tab4">
-	                				<div class="testimonial-image">
-	                					<img src="assets/img/testimonials/4.jpg" alt="" data-at2x="assets/img/testimonials/4.jpg">
-	                				</div>
-	                				<div class="testimonial-text">
-		                                <p>
-		                                	"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
-		                                	ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-		                                	lobortis nisl ut aliquip ex ea commodo consequat..."<br>
-		                                	<a href="#">Minim Veniam, nostrud.com</a>
-		                                </p>
-	                                </div>
-	                			</div>
-	                		</div>
+	                		
 	                		<!-- Nav tabs -->
 	                		<ul class="nav nav-tabs" role="tablist">
 	                			<li role="presentation" class="active">
@@ -358,17 +327,15 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-12 call-to-action section-description wow fadeInLeftBig">
-	                    <h2><strong>Call</strong> to action</h2>
+	                    <h2><strong>Productos</strong> a Entregar</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                    <p>
-	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
-	                    	aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
-	                    </p>
+	                    		                    </p>
 	                </div>
 	            </div>
 	            <div class="row">
 	            	<div class="col-sm-12 section-bottom-button wow fadeInUp">
-                        <a class="btn btn-link-1 scroll-link" href="#top-content">Sign up now</a>
+                        <a class="btn btn-link-1 scroll-link" href="#top-content">FIN</a>
 	            	</div>
 	            </div>
 	        </div>
@@ -379,7 +346,7 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-12 about-us section-description wow fadeIn">
-	                    <h2><strong>About</strong> us</h2>
+	                    <h2><strong>Investigadores</strong></h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                </div>
 	            </div>
@@ -388,8 +355,8 @@
 		                <div class="about-us-photo">
 		                	<img src="assets/img/about/1.jpg" alt="" data-at2x="assets/img/about/1.jpg">
 		                </div>
-	                    <h3>Jim Black</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+	                    <h3>Anderson Martinez</h3>
+	                    <p>Estudiante de Administración de Empresas y Economía</p>
 	                    <div class="about-us-social">
 		                	<a href="#"><i class="fa fa-facebook"></i></a>
 		                	<a href="#"><i class="fa fa-dribbble"></i></a>
@@ -400,8 +367,8 @@
 		                <div class="about-us-photo">
 		                	<img src="assets/img/about/2.jpg" alt="" data-at2x="assets/img/about/2.jpg">
 		                </div>
-	                    <h3>Tom Brown</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+	                    <h3>Nathalia Fernandez</h3>
+	                    <p>Estudiante Decimo Semestre Administración de Empresas</p>
 	                    <div class="about-us-social">
 		                	<a href="#"><i class="fa fa-facebook"></i></a>
 		                	<a href="#"><i class="fa fa-dribbble"></i></a>
@@ -410,10 +377,10 @@
 	                </div>
 	                <div class="col-sm-4 about-us-box wow fadeInUp">
 		                <div class="about-us-photo">
-		                	<img src="assets/img/about/3.jpg" alt="" data-at2x="assets/img/about/3.jpg">
+		                	<img src="assets/img/about/edu.jpg" alt="" data-at2x="assets/img/about/3.jpg">
 		                </div>
-	                    <h3>Sarah Green</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+	                    <h3>Eduardo Paredes</h3>
+	                    <p>Economista, Especialista en finanzas y estudiante de Administración de Empresas</p>
 	                    <div class="about-us-social">
 		                	<a href="#"><i class="fa fa-facebook"></i></a>
 		                	<a href="#"><i class="fa fa-dribbble"></i></a>
