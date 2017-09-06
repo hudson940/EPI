@@ -5,6 +5,7 @@
 @if ( Auth::user()->rol=='estudiante')
         <div class="card"> <h3> No esta autorizado para editar usuarios</h3></div>
        @else 
+       @include('flash::message')
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -53,7 +54,7 @@
                     </div>
                     
                     {!! Form::close() !!}
-                     @include('flash::message')
+                     
                     
     </div>
 <div class="card">
@@ -85,8 +86,8 @@
                             <td>{{$User->rol}}</td>
                             <td>{{$User->email}}</td>
                             <td>  <button class="btn btn-sm btn-success"><i class="fa fa-check"></i> </button>
-								  <button class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </button>
-								  <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </button>
+								  <button href="{{route('usuarios.edit',$User->id)}}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </button>
+								  <button href="{{route('usuarios.destroy',$User->id)}}" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </button>
 													  
                             </td>
                           

@@ -50,33 +50,33 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">EPI</a>
+					<a class="navbar-brand" href="/">EPI</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a class="scroll-link" href="#Presentacion">Presentacion</a></li>
-						<li><a class="scroll-link" href="#objetivos">Objetivos</a></li>
-						<li><a class="scroll-link" href="#Metodologia">Metodologia</a></li>
+						<li><a class="scroll-link" href="#top-content">Presentacion</a></li>
+						<li><a class="scroll-link" href="#features">Objetivos</a></li>
+						<li><a class="scroll-link" href="#how-it-works">Metodologia</a></li>
 						<li><a class="scroll-link" href="#Director">Director</a></li>
-						<li><a class="scroll-link" href="#Investigadores-us">Investigadores</a></li>
+						<li><a class="scroll-link" href="#about-us">Investigadores</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
         <!-- Top content -->
-        <div class="top-content">
+        <div class="top-content" >
         	
             <div class="inner-bg">
                 <div class="container">
                 	
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1 class="wow fadeInLeftBig">ANÁLISIS EXPLOTACIONES ECONÓMICAS <strong>EN ÁREAS ESPECIALES DE PROTECCIÓN </strong></h1>
+                            <h1 class="wow fadeInLeftBig">ANALISIS DE LAS EXPLOTACIONES ECONÓMICAS Y/O DE SUBSISTENCIA  <strong>REALIZADAS  EN ÁREAS ESPECIALES DE PROTECCIÓN </strong></h1>
                             <div class="description wow fadeInLeftBig">
                             	<p>
-	                            	EN EL MUNICIPIO DE SAN JUANITO - META
+	                            	DEL MUNICIPIO DE SAN JUANITO - META
                             	</p>
                             </div>
                             <div class="top-big-link wow fadeInUp">
@@ -90,8 +90,67 @@
             </div>
             
         </div>
-		  <!-- planteamiento del problema  -->
-        <div class="great-support-container section-container">
+
+			<!-- Tab panes -->
+
+        <div class="testimonials-container section-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 testimonials section-description wow fadeIn">
+	                    <h2><strong>Aspectos</strong> Generales</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-sm-10 col-sm-offset-1 testimonial-list wow fadeInUp">
+	                	<div role="tabpanel">
+	                		<!-- Tab panes -->
+	                		<div class="tab-content">
+	                			<div role="tabpanel" class="tab-pane active" id="tab1">
+								<div class="testimonial-text">
+		                                <h3>
+		                                	San Juanito<br>
+		                                	<a href="#"></a>
+		                                </h3>
+	                                </div>
+	                				<div class="">
+	                					<img src="assets/img/testimonials/diapositiva1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
+	                				</div>
+	                				
+	                			</div>
+	                			<div role="tabpanel" class="tab-pane " id="tab2">
+								<div class="testimonial-text">
+		                                <h3>
+		                                	Parque Nacional Natural Chingaza<br>
+		                                	<a href="#"></a>
+		                                </h3>
+	                                </div>
+	                				<div class="">
+	                					<img src="assets/img/testimonials/diapositiva2.jpg" alt="" data-at2x="assets/img/testimonials/2.jpg">
+	                				</div>
+	                				
+	                			</div>
+	                		
+	                		<!-- Nav tabs -->
+	                		<ul class="nav nav-tabs" role="tablist">
+	                			<li role="presentation" class="active">
+	                				<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
+	                			</li>
+	                			<li role="presentation">
+	                				<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"></a>
+	                			</li>
+	                			
+	                		</ul>
+	                	</div>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+
+
+	                		
+		  <!-- planteamiento del problema  
+        <div class="great-support-container section-container" >
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-12 great-support section-description wow fadeIn">
@@ -102,8 +161,9 @@
 	            <div class="row">
 	            	<div class="col-sm-7 great-support-box wow fadeInLeft">
 	                    <div class="great-support-box-text great-support-box-text-left">
-	                    	<h3>La intervención antrópica y el cambio climático en combinación producen considerables daños al ecosistema</h3>
+	                    	
 	                    	<p class="medium-paragraph">
+							La intervención antrópica y el cambio climático en combinación producen considerables daños al ecosistema. 
 							El <span class="colored-text">páramo de Chingaza</span> posee un gran riesgo de desaparición, situación que ha generado a través de la resolución 710 de mayo de 2016,
 							 por el cual se delimita la zona del páramo, la ampliación de éste al considerarlo a partir del gradiente altitudinal de los 3.000 msnm. Evento motivado por la condición
 							  estratégica del páramo de proveer de servicios ecosistémicosde producción a una de las ciudades más grandes del mundo (Bogotá). En consecuencia y dada la designación 
@@ -122,11 +182,11 @@
 	             
 	            </div>
 	        </div>
-        </div>
+        </div>-->
         
         
         <!-- Features -->
-        <div class="features-container section-container">
+        <div class="features-container section-container" id="objetivos">
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-12 features section-description wow fadeIn">
@@ -278,7 +338,7 @@
 	                	<div role="tabpanel">
 	                		<!-- Tab panes -->
 	                		<div class="tab-content">
-	                			<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+	                			<div role="tabpanel" class="tab-pane fade in active" id="tab3">
 	                				<div class="testimonial-image">
 	                					<img src="assets/img/testimonials/1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
 	                				</div>
@@ -288,8 +348,7 @@
 		                                	<a href="#"></a>
 		                                </p>
 	                                </div>
-	                			</div>
-	                			<div role="tabpanel" class="tab-pane fade" id="tab2">
+	                			
 	                				<div class="testimonial-image">
 	                					<img src="assets/img/testimonials/2.jpg" alt="" data-at2x="assets/img/testimonials/2.jpg">
 	                				</div>
@@ -304,17 +363,12 @@
 	                		<!-- Nav tabs -->
 	                		<ul class="nav nav-tabs" role="tablist">
 	                			<li role="presentation" class="active">
-	                				<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
+	                				<a href="#tab1" aria-controls="tab3" role="tab" data-toggle="tab"></a>
 	                			</li>
 	                			<li role="presentation">
-	                				<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"></a>
+	                				<a href="#tab2" aria-controls="tab4" role="tab" data-toggle="tab"></a>
 	                			</li>
-	                			<li role="presentation">
-	                				<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab"></a>
-	                			</li>
-	                			<li role="presentation">
-	                				<a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"></a>
-	                			</li>
+	                			
 	                		</ul>
 	                	</div>
 	                </div>
