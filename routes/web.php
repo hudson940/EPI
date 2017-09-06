@@ -13,7 +13,7 @@
 
 
 Route::get('welcome', function () {
-    return view('welcome');
+    return view('landing.landing');
 });
 
 Route::get('index','indexController@index')->name('index');
