@@ -44,6 +44,16 @@
                        {!! Form::radio($pregunta->variable, '0') !!} No
                        
                       </div></div>
+
+                        @elseif ($pregunta->option=="checkbox")
+              <div class="form-group row">
+                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                      <div class="col-sm-9">
+                  @php $array = explode(',', $pregunta->html); @endphp
+                      @foreach ($array as $option)
+                      {!! Form::checkbox($pregunta->variable, $option) !!} {{$option}}
+                     @endforeach</div></div>
+              
                       @elseif ($pregunta->option=="agricola")
                       <div class="form-group row">
                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  

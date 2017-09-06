@@ -44,7 +44,15 @@
                        {!! Form::radio($preguntaE->variable, '0') !!} No
                        
                       </div></div>
-            
+                                           
+                     @elseif ($preguntaE->option=="checkbox")
+                       <div class="form-group row">
+                       {!!Form::label($preguntaE->variable,$preguntaE->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                      <div class="col-sm-9">
+
+                      {!! Form::checkbox($preguntaE->variable, $preguntaE->placeholder) !!}</div></div>
+                     
+
                       @endif
                
                       
