@@ -146,9 +146,9 @@
 	            </div>
 	        </div>
         </div>
-
+		<div class=map>
 		<iframe src="https://www.google.com/maps/d/embed?mid=1HT8a5LoZ6b3lVE0ZkyOydAXgwmY" width="1040" height="600"></iframe>
-	                		
+		<div>
 		  
         <div class="great-support-container section-container" >
 	        <div class="container">
@@ -431,7 +431,7 @@
 	                </div>
 	                <div class="col-sm-4 about-us-box wow fadeInUp">
 		                <div class="about-us-photo">
-		                	<img src="assets/img/about/edu.jpg" alt="" data-at2x="assets/img/about/3.jpg">
+		                	<img src="assets/img/about/3.jpg" alt="" data-at2x="assets/img/about/3.jpg">
 		                </div>
 	                    <h3>Eduardo Paredes</h3>
 	                    <p>Economista, Especialista en finanzas y estudiante de Administración de Empresas</p>
