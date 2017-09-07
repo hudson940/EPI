@@ -1,11 +1,11 @@
 @extends ('master')
-@section ('titulo','Editar Preguntas')
+@section ('titulo','Editar Usuario')
 @section('dasboard','Formulario de Edicion')
 @section ('contenido')
   @include('flash::message')
   @if ( Auth::user()->rol=='estudiante')
         <div class="card"> <h3>  No esta autorizado para editar preguntas </h3></div>
-        return redirect()->route('index'); @else 
+         @else 
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -86,14 +86,14 @@
                      
                       <div class="form-group row">       
                           <div class="col-sm-9 offset-sm-3">
-                      {!! Form::submit('Editar Pregunta', ['class'=>'btn btn-primary']) !!}
+                      {!! Form::submit('Editar Usuario', ['class'=>'btn btn-primary']) !!}
                        </div>
                         </div>
                     </div>
                     
                     {!! Form::close() !!}
-                    
+  @endif                  
                      
     </div>
-       @endif
+
 @endsection

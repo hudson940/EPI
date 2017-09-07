@@ -19,7 +19,7 @@
         <div class="card-body">
                      
                     
-                      {!! Form::open(['route'=> 'usuarios.update','method'=>'POST','class'=>'form-horizontal'])!!}
+                      {!! Form::open(['route'=> 'usuarios.update','method'=>'PUT','class'=>'form-horizontal'])!!}
                       <div class="form-group row">
                         {!! Form::label('name', 'Nombre', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">

@@ -86,7 +86,7 @@
           </div>
           <!-- Sidebar Navidation Menus--><span class="heading">Menu</span>
           <ul class="list-unstyled">
-            <li class="active"> <a href="./"><i class="icon-home"></i>Inicio</a></li>
+            <li class="active"> <a href="/index"><i class="icon-home"></i>Inicio</a></li>
             <li><a href="#dashvariants" aria-expanded="false" data-toggle="collapse"> <i class="icon-screen"></i>Formulario </a>
               <ul id="dashvariants" class="collapse list-unstyled">
                 <li><a href="/formulario">General</a></li>

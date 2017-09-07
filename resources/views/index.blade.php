@@ -37,6 +37,7 @@
                     <div class="number"><strong>0</strong></div>
                   </div>
                 </div>
+
                 <!-- Item -->
                 <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">
@@ -66,5 +67,5 @@
               
               </div>
             </div>
-   
+   <iframe class="col-md-1" src="https://www.google.com/maps/d/embed?mid=1HT8a5LoZ6b3lVE0ZkyOydAXgwmY" width="840" height="600"></iframe>
 @endsection

@@ -86,8 +86,8 @@
                             <td>{{$User->rol}}</td>
                             <td>{{$User->email}}</td>
                             <td>  <button class="btn btn-sm btn-success"><i class="fa fa-check"></i> </button>
-								  <button href="{{route('usuarios.edit',$User->id)}}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </button>
-								  <button href="{{route('usuarios.destroy',$User->id)}}" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </button>
+								  <a href="{{route('usuarios.edit',$User->id)}}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </a>
+								  <a href="{{route('usuarios.destroy',$User->id)}}" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </a>
 													  
                             </td>
                           

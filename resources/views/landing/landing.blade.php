@@ -147,9 +147,9 @@
 	        </div>
         </div>
 
-
+		<iframe src="https://www.google.com/maps/d/embed?mid=1HT8a5LoZ6b3lVE0ZkyOydAXgwmY" width="1040" height="600"></iframe>
 	                		
-		  <!-- planteamiento del problema  
+		  
         <div class="great-support-container section-container" >
 	        <div class="container">
 	            <div class="row">
