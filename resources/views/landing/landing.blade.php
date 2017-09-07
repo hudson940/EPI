@@ -146,10 +146,10 @@
 	            </div>
 	        </div>
         </div>
-		<div class=map>
-		<iframe class=map src="https://www.google.com/maps/d/embed?mid=1HT8a5LoZ6b3lVE0ZkyOydAXgwmY" width="1040" height="600" frameborder="0" allowfullscreen></iframe>
-		<div>
-		  
+		
+		<iframe class=map src="https://www.google.com/maps/d/embed?mid=1HT8a5LoZ6b3lVE0ZkyOydAXgwmY" width="90%" height="600" ></iframe>
+		
+
         <div class="great-support-container section-container" >
 	        <div class="container">
 	            <div class="row">
