@@ -49,10 +49,13 @@
               <div class="form-group row">
                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
                       <div class="col-sm-9">
-                  @php $array = explode(',', $pregunta->html); @endphp
-                      @foreach ($array as $option)
-                      {!! Form::checkbox($pregunta->variable, $option) !!} {{$option}}
-                     @endforeach</div></div>
+                  @php $array = explode(',', $pregunta->html); $n=count($array) @endphp
+                  @for ($i=0;$i<$n;$i++)
+                   {!! Form::checkbox($pregunta->variable, $i+1) !!} {{$array[$i]}}
+                  @endfor
+                   </div></div>
+                  
+                   
               
                       @elseif ($pregunta->option=="agricola")
                       <div class="form-group row">
