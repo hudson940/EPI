@@ -126,7 +126,7 @@
 		                                </h3>
 	                                </div>
 	                				<div class="">
-	                					<img src="assets/img/testimonials/diapositiva2.jpg" alt="" data-at2x="assets/img/testimonials/diapositiva2.jpg">
+	                					<img src="assets/img/testimonials/diapositiva3.jpg" alt="" data-at2x="assets/img/testimonials/diapositiva3.jpg">
 	                				</div>
 	                				
 	                			</div>

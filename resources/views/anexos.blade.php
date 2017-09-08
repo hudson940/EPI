@@ -20,7 +20,7 @@
                      
                      </div>
 </div>
-<a href="{{asset('storage/lista-terminos.pdf')}}">formulario pdf</a>
+<a href="{{asset('storage/lista-terminos.pdf')}}">Lista de terminos</a>
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
