@@ -5,7 +5,12 @@ namespace App\Http\Controllers;
 use App\Formulario;
 use App\Pregunta;
 use Illuminate\Http\Request;
+use FormularioForestal;
+use App\Cultivo;
+use FormularioCultivo;
+use FormularioGeneral;
 
+use Illuminate\Support\Facades\DB;
 class FormularioController extends Controller
 {
     /**
@@ -36,9 +41,10 @@ class FormularioController extends Controller
         return view('anexos')->with('preguntasE',$preguntasE);
     }
     public function forestal()
-    {
+    {  $cultivos=Cultivo::all();
+       // $cultivos=DB::table('cultivos')->select('Cultivo_plantacion');
         $preguntasE=Pregunta::where('class','forestal')->paginate(50);
-        return view('formulario-forestal')->with('preguntasE',$preguntasE);
+        return view('formulario-forestal')->with('preguntasE',$preguntasE)->with('cultivos',$cultivos);
     }
     /**
      * Show the form for creating a new resource.
@@ -60,7 +66,13 @@ class FormularioController extends Controller
     {
         //
     }
-
+    public function storef(Request $request)
+    {
+        $forestal= new FormularioForestal($request->all());
+        $forestal->save();
+        flash("Se ha agreado el cultivo si necestia realcionar otro vuelva a diligenciar el formulario, si ya termino cierre la ventana");
+        return redirect()->route('formulario.forestal');
+    }
     /**
      * Display the specified resource.
      *

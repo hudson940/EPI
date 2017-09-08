@@ -19,7 +19,7 @@ class FormularioForestales extends Migration
             $table->string('38-plantacion',60)->unique();
             $table->float('39-area_forestal',4,2);
             $table->float('40-Q_plantas',4,2);
-            $table->enum('41-finalidad_fores',['venta','auto-consumo']);
+            $table->integer('41-finalidad_fores');
             $table->float('42-productividad_f',4,2);
             $table->rememberToken();
             $table->timestamps();

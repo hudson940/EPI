@@ -30,6 +30,8 @@ Route::resource('preguntas','PreguntasController');
 Route::resource('formularios', 'FormulariosController');
 Route::resource('formulario', 'FormularioController');
 
+Route::post('formulario','FormularioController@storef' )->name('formulario.storef');
+
 
 
 Auth::routes();
