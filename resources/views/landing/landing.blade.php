@@ -153,10 +153,7 @@
         <div class="great-support-container section-container" >
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-sm-12 great-support section-description wow fadeIn">
-	                    <h2><strong>Planteamiento</strong> del Problema</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                </div>
+	                
 	            </div>
 	            <div class="row">
 	            	<div class="col-sm-7 great-support-box wow fadeInLeft">
