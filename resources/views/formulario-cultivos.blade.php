@@ -44,7 +44,14 @@
                        {!! Form::radio($preguntaE->variable, '0') !!} No
                        
                       </div></div>
-            
+                              @elseif ($pregunta->option=="checkbox")
+              <div class="form-group row">
+                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                      <div class="col-sm-9">
+                  @php $array = explode(',', $pregunta->html); $n=count($array) @endphp
+                  @for ($i=0;$i<$n;$i++)
+                   {!! Form::checkbox($pregunta->variable, $i+1) !!} {{$array[$i]}}
+                  @endfor  
                       @endif
                
                       
