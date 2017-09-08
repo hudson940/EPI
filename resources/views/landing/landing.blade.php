@@ -147,8 +147,7 @@
 	        </div>
         </div>
 		
-		<iframe class=map src="https://www.google.com/maps/d/embed?mid=1HT8a5LoZ6b3lVE0ZkyOydAXgwmY" width="90%" height="600" ></iframe>
-		
+			
 
         <div class="great-support-container section-container" >
 	        <div class="container">
