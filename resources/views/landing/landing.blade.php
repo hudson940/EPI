@@ -237,7 +237,7 @@ De modo que, la investigación se encamina a cerrar la brecha entre las activida
 	                    	</div>
 	                    	<h3>Dimensión Económica</h3>
 	                    	<div class="more-features-box-text-description">
-	                    		Entendemos esta dimensión como la capacidad de generar valor de forma responsable
+	                    		Entendemos esta dimensión como la capacidad de generar valor de forma responsable.
 	                    	</div>
 	                    </div>
 	                    <div class="more-features-box-text">
@@ -246,7 +246,7 @@ De modo que, la investigación se encamina a cerrar la brecha entre las activida
 	                    	</div>
 	                    	<h3>Dimensión Ambiental</h3>
 	                    	<div class="more-features-box-text-description">
-	                    		consiste en el desarrollo armónico entre la diversidad de ecosistemas, el hombre 
+	                    		Consiste en el desarrollo armónico entre la diversidad de ecosistemas, el hombre 
 								y su ambiente en el mismo territorio, de modo tal que se puedan llevar a cabo los objetivos de orden social, económico y cultural, sin dañar la naturaleza.
 	                    	</div>
 	                    </div>
@@ -375,7 +375,9 @@ De modo que, la investigación se encamina a cerrar la brecha entre las activida
 	                    <h2><strong>Productos</strong> a Entregar</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                    <p>
-	                    		                    </p>
+	                    		      <h4> Clasificación de predios por vereda de acuerdo a las características propias de cada territorio y su distribución en zonas de protección. </h4>
+<h4>Clasificación de las explotaciones económicas y/o de subsistencia por vereda.</h4>
+<h4>Determinacion de la sostenibilidad ecológica, económica y social de las actividades que se desarrollan.     </h4>        </p>
 	                </div>
 	            </div>
 	            <div class="row">

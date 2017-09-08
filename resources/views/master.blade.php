@@ -97,7 +97,7 @@
               </ul>
             </li>
              <li><a href="{{route('preguntas.index')}}" > <i class="icon-padnote"></i>Preguntas </a></li>
-              
+              <li><a href="/mapa" > <i class="icon-padnote"></i>Mapa</a></li>
                
            
             <li> <a href="{{route('usuarios.index')}}"> <i class="icon-user"></i>Usuarios </a></li>

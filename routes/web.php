@@ -16,6 +16,9 @@ Route::get('/', function () {
     return view('landing.landing');
 });
 
+Route::get('mapa', function () {
+    return view('mapa');
+});
 Route::get('index','indexController@index')->name('index');
 Route::resource('/login','Auth\LoginController');
 Route::get('formulario-forestal','FormularioController@forestal')->name('formulario.forestal');

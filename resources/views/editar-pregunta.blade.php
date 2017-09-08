@@ -86,7 +86,7 @@
                      
                       <div class="form-group row">       
                           <div class="col-sm-9 offset-sm-3">
-                      {!! Form::submit('Editar Usuario', ['class'=>'btn btn-primary']) !!}
+                      {!! Form::submit('Editar Pregunta', ['class'=>'btn btn-primary']) !!}
                        </div>
                         </div>
                     </div>

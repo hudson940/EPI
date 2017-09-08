@@ -69,7 +69,7 @@
                        <div class="form-group row">
                         {!! Form::label('class', 'Categoria', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">
-                        {!! Form::select('class',['general'=>'General','agricola'=>'Inventario agricola','pecuaria'=>'Otras actividades pecuarias','noagropecuario'=>'Actividades no agropecuarias'], 'general',['class'=>'form-control form-control-success', 'placeholder' =>'']) !!}
+                        {!! Form::select('class',['general'=>'General','agricola'=>'Inventario agricola','pecuaria'=>'Otras actividades pecuarias','forestal'=>'Inventario Forestal'], 'general',['class'=>'form-control form-control-success', 'placeholder' =>'']) !!}
                         </div>
                       </div>
                       
