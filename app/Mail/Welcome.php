@@ -16,9 +16,9 @@ class Welcome extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(User $user)
     {
-        //
+        $this->user=$user;
     }
 
     /**
@@ -28,6 +28,7 @@ class Welcome extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->view('email.welcome')->from('anderson.martinez@unillanos.edu.co')
+        ->subject('Bienvenido a la Investigacion San Juanito');
     }
 }
