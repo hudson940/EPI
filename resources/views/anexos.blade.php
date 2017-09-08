@@ -14,7 +14,7 @@
                       <h3 class="h4">Formulario en PDF</h3>
                     </div>
         <div class="card-body">
-             <iframe src="http://docs.google.com/gview?url="{{asset('archivos/instrumento.pdf')}}&embedded=true" style="width:100%; height:800px;" frameborder="0"></iframe>        
+             <iframe src="http://docs.google.com/gview?url={{asset('archivos/instrumento.pdf')}}&embedded=true style="width:100%; height:800px;" frameborder="0"></iframe>        
            
                      
                      </div>

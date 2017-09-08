@@ -18,8 +18,8 @@ Route::get('/', function () {
 
 Route::get('index','indexController@index')->name('index');
 Route::resource('/login','Auth\LoginController');
-Route::get('formulario-forestal','FormularioController@forestal')->name('formularo.cultivos');
-Route::get('formulario-cultivos','FormularioController@cultivos')->name('formularo.cultivos');
+Route::get('formulario-forestal','FormularioController@forestal')->name('formulario.forestal');
+Route::get('formulario-cultivos','FormularioController@cultivos')->name('formulario.cultivos');
 Route::get('formulario-pecuario','FormularioController@pecuario')->name('formulario.pecuario');
 Route::get('anexos','FormularioController@noAgropecuario')->name('anexos');
 Route::resource('usuarios', 'UsersController');

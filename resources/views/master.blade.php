@@ -78,7 +78,7 @@
         <nav class="side-navbar">
           <!-- Sidebar Header-->
           <div class="sidebar-header d-flex align-items-center">
-            <div class="avatar"><img src="img/logounillanos.png" alt="..." class="img-fluid rounded-circle"></div>
+            <div class="avatar"><img src="{{asset('img/logounillanos.png')}}" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title">
               <h1 class="h4">{{ Auth::user()->name }}</h1>
               <p>Unillanos</p>
@@ -89,17 +89,18 @@
             <li class="active"> <a href="/index"><i class="icon-home"></i>Inicio</a></li>
             <li><a href="#dashvariants" aria-expanded="false" data-toggle="collapse"> <i class="icon-screen"></i>Formulario </a>
               <ul id="dashvariants" class="collapse list-unstyled">
-                <li><a href="/formulario">General</a></li>
-                <li><a href="formulario-cultivos">Actividad Agricola</a></li>
-              <li><a href="formulario-pecuario">Actividad Pecuaria</a></li>
-                <li><a href="anexos">Anexos</a></li>
+                <li><a href="{{route('formulario.index')}}">General</a></li>
+                <li><a href="{{route('formulario.cultivos')}}">Actividad Agricola</a></li>
+              <li><a href="{{route('formulario.pecuario')}}">Actividad Pecuaria</a></li>
+              <li><a href="{{route('formulario.forestal')}}">Plantaciones Forestales</a></li>
+                <li><a href="{{route('anexos')}}">Anexos</a></li>
               </ul>
             </li>
-             <li><a href="/preguntas" > <i class="icon-padnote"></i>Preguntas </a></li>
+             <li><a href="{{route('preguntas.index')}}" > <i class="icon-padnote"></i>Preguntas </a></li>
               
                
            
-            <li> <a href="/usuarios"> <i class="icon-user"></i>Usuarios </a></li>
+            <li> <a href="{{route('usuarios.index')}}"> <i class="icon-user"></i>Usuarios </a></li>
             
           </ul>
         </nav>
