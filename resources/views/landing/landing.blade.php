@@ -114,7 +114,8 @@
 		                                </h3>
 	                                </div>
 	                				<div class="">
-	                					<img src="assets/img/testimonials/diapositiva1.jpg" alt="" data-at2x="assets/img/testimonials/diapositiva1.jpg">
+									<img src="assets/img/testimonials/diapositiva3.jpg" alt="" data-at2x="assets/img/testimonials/diapositiva3.jpg">
+	                				
 	                				</div>
 	                				
 	                			</div>
@@ -126,7 +127,7 @@
 		                                </h3>
 	                                </div>
 	                				<div class="">
-	                					<img src="assets/img/testimonials/diapositiva3.jpg" alt="" data-at2x="assets/img/testimonials/diapositiva3.jpg">
+	                					<img src="assets/img/testimonials/diapositiva1.jpg" alt="" data-at2x="assets/img/testimonials/diapositiva1.jpg">
 	                				</div>
 	                				
 	                			</div>
@@ -163,8 +164,8 @@
 	                    	
 	                    	<p class="medium-paragraph">
 							La investigación se desarrolla en el área del Parque Nacional Natural Chingaza, zona del páramo de Chingaza, en la jurisdicción del municipio de San Juanito – Meta (Ver Imagen). Ésta pretende generar una base en la comprensión de los fenómenos socioeconómicos ocurridos en el ecosistema del páramo mediante el análisis de las explotaciones económicas y/o de subsistencia que se llevan a cabo en el área con finalidad determinar la sostenibilidad ecológica, económica y social en aras de establecer elementos que se ajusten a la preservación de tales áreas y las necesidades de sus habitantes.
-
-De modo que, la investigación se encamina a cerrar la brecha entre las actividades económicas de las comunidades y la conservación del entorno, ya que ésta zona es de importancia estratégica nacional. Conforme a lo anterior, la conveniencia del proyecto radica en cuanto a la posibilidad de determinar si una comunidad pudiera permanecer en zonas de protección y conexas a partir de la generación de actividades en pro de la sostenibilidad del territorio.
+</p>
+<p>De modo que, la investigación se encamina a cerrar la brecha entre las actividades económicas de las comunidades y la conservación del entorno, ya que ésta zona es de importancia estratégica nacional. Conforme a lo anterior, la conveniencia del proyecto radica en cuanto a la posibilidad de determinar si una comunidad pudiera permanecer en zonas de protección y conexas a partir de la generación de actividades en pro de la sostenibilidad del territorio.
 
 						</p>
 	                    </div>
