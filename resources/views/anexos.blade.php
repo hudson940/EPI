@@ -3,6 +3,7 @@
 @section('dashboard','Formulario/No Agropecuario')
 @section('contenido')
  @include('flash::message')
+ <a href="{{asset('storage/instrumento.pdf')}}">formulario pdf</a>
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -19,7 +20,7 @@
                      
                      </div>
 </div>
-
+<a href="{{asset('storage/lista-terminos.pdf')}}">formulario pdf</a>
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
