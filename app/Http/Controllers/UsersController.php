@@ -94,7 +94,7 @@ class UsersController extends Controller
     public function destroy($id)
     {
         User::destroy($id);
-        flash("El usuario ".$user->name." fue borrado");
+        flash("El usuario fue borrado");
         return redirect()->route('usuarios.index');
         
     }

@@ -75,7 +75,8 @@
                             <th>Nombre</th>
                             <th>Rol</th>
                             <th>Email</th>
-                            <th>Accion</th>
+                            <th>Editar</th>
+                            <th>Borrar</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -85,10 +86,13 @@
                             <th>{{$User->name}}</th>
                             <td>{{$User->rol}}</td>
                             <td>{{$User->email}}</td>
-                            <td>  <button class="btn btn-sm btn-success"><i class="fa fa-check"></i> </button>
+                            <td> 
 								  <a href="{{route('usuarios.edit',$User->id)}}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </a>
-								  <a href="{{route('usuarios.destroy',$User->id)}}" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </a>
-													  
+								 </td><td>
+                   {!! Form::open(['route'=> ['usuarios.destroy',$User->id],'method'=>'DELETE','class'=>'hidden'])!!}                    
+                  <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </button>
+											{!! Form::close() !!}
+  
                             </td>
                           
                           </tr>
