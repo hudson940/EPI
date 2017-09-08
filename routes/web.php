@@ -21,7 +21,7 @@ Route::resource('/login','Auth\LoginController');
 Route::get('formulario-forestal','FormularioController@forestal')->name('formularo.cultivos');
 Route::get('formulario-cultivos','FormularioController@cultivos')->name('formularo.cultivos');
 Route::get('formulario-pecuario','FormularioController@pecuario')->name('formulario.pecuario');
-Route::get('formulario-no-agropecuario','FormularioController@noAgropecuario')->name('formulario.nopec');
+Route::get('anexos','FormularioController@noAgropecuario')->name('anexos');
 Route::resource('usuarios', 'UsersController');
 Route::resource('preguntas','PreguntasController');
 Route::resource('formularios', 'FormulariosController');

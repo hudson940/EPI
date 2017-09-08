@@ -2,6 +2,7 @@
 @section ('titulo','EPI Sanjuanito')
 @section('dasboard','EPI Sanjuanito')
 @section ('contenido')
+ 
 <section class="dashboard-counts no-padding-bottom">
 
 <div class="container-fluid">
@@ -10,7 +11,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+               
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -19,13 +20,18 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <h1> Bienvenido...</h1><p>
+                Gracias por decidir hacer parte de este gran proyecto. Esperamos que los días de trabajo de campo sean muy provechosos,
+                 preparémonos para vivir una experiencia única en investigación; ésta es una gran oportunidad de acercar la academia con la comunidad. Los invitamos a revisar paso a paso el instrumento que diseñamos para esta investigación
+                 (encuesta) y a leer en detalle la lista de términos. Si tienen alguna duda estamos dispuestos a ayudarlos. </p>
+               
                 </div>
             </div>
         </div>
     </div>
 </div>
                 <!-- Item -->
+               
                 <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-violet"><i class="icon-screen"></i></div>
@@ -67,5 +73,5 @@
               
               </div>
             </div>
-   <iframe class="col-md-1" src="https://www.google.com/maps/d/embed?mid=1HT8a5LoZ6b3lVE0ZkyOydAXgwmY" width="840" height="600"></iframe>
+ 
 @endsection
