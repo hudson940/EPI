@@ -61,9 +61,9 @@
                        
                       </div></div>
                        <div class="form-group row">
-                        {!! Form::label('html', 'HTML', ['class'=>'sr-only col-sm-3 from-control-label']) !!}
+                        {!! Form::label('html', 'HTML', ['class'=>' col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">
-                        {!! Form::text('html', 'nada', ['class'=>'sr-only form-control form-control-success', 'placeholder' =>'']) !!}
+                        {!! Form::text('html', 'nada', ['class'=>' form-control form-control-success', 'placeholder' =>'']) !!}
                         </div>
                       </div>
                        <div class="form-group row">
