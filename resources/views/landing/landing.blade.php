@@ -114,7 +114,7 @@
 		                                </h3>
 	                                </div>
 	                				<div class="">
-	                					<img src="assets/img/testimonials/diapositiva1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
+	                					<img src="assets/img/testimonials/diapositiva1.jpg" alt="" data-at2x="assets/img/testimonials/diapositiva1.jpg">
 	                				</div>
 	                				
 	                			</div>
@@ -126,7 +126,7 @@
 		                                </h3>
 	                                </div>
 	                				<div class="">
-	                					<img src="assets/img/testimonials/diapositiva2.jpg" alt="" data-at2x="assets/img/testimonials/2.jpg">
+	                					<img src="assets/img/testimonials/diapositiva2.jpg" alt="" data-at2x="assets/img/testimonials/diapositiva2.jpg">
 	                				</div>
 	                				
 	                			</div>
