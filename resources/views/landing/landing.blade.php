@@ -97,7 +97,7 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-12 testimonials section-description wow fadeIn">
-	                    <h2><strong>Aspectos</strong> Generales</h2>
+	                    <h2><strong>Resumen </strong>del Proyecto</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                </div>
 	            </div>
@@ -109,7 +109,7 @@
 	                			<div role="tabpanel" class="tab-pane active" id="tab1">
 								<div class="testimonial-text">
 		                                <h3>
-		                                	San Juanito<br>
+		                                	Area de Estudio<br>
 		                                	<a href="#"></a>
 		                                </h3>
 	                                </div>
@@ -121,7 +121,7 @@
 	                			<div role="tabpanel" class="tab-pane " id="tab2">
 								<div class="testimonial-text">
 		                                <h3>
-		                                	Parque Nacional Natural Chingaza<br>
+		                                	Area de Estudio<br>
 		                                	<a href="#"></a>
 		                                </h3>
 	                                </div>
@@ -162,18 +162,11 @@
 	                    <div class="great-support-box-text great-support-box-text-left">
 	                    	
 	                    	<p class="medium-paragraph">
-							La intervención antrópica y el cambio climático en combinación producen considerables daños al ecosistema. 
-							El <span class="colored-text">páramo de Chingaza</span> posee un gran riesgo de desaparición, situación que ha generado a través de la resolución 710 de mayo de 2016,
-							 por el cual se delimita la zona del páramo, la ampliación de éste al considerarlo a partir del gradiente altitudinal de los 3.000 msnm. Evento motivado por la condición
-							  estratégica del páramo de proveer de servicios ecosistémicosde producción a una de las ciudades más grandes del mundo (Bogotá). En consecuencia y dada la designación 
-							  como <span class="colored-text"> Parque Nacional Natural </span> al paramo de Chingaza mediante la ley 281 de 1974, la cual establece el sistema de parques nacionales, éste es considerado zona de protección 
-							  especial por lo tanto las actividades antes mencionadas no son permitidas en estos territorios, debido al impacto negativo que tienen sobre el ecosistema. 
-	                    		 	</p>
-	                    	<p>
-	                    	Así las cosas el municipio de <span class="colored-text">San Juanito, Meta</span>, se encuentra en un 50% de su territorio inmerso en el Parque Nacional Natural Chingaza –PNNCH- (PNN2005) e indudablemente con 
-							la resolución de límites del páramo se debe ampliar el porcentaje de áreas protegidas 
-							constituyéndose un conflicto por ocupación y uso de tierras, situación presente desde años atrás de la creación de la resolución respectiva de esta zona de protección. 
-	                    	</p>
+							La investigación se desarrolla en el área del Parque Nacional Natural Chingaza, zona del páramo de Chingaza, en la jurisdicción del municipio de San Juanito – Meta (Ver Imagen). Ésta pretende generar una base en la comprensión de los fenómenos socioeconómicos ocurridos en el ecosistema del páramo mediante el análisis de las explotaciones económicas y/o de subsistencia que se llevan a cabo en el área con finalidad determinar la sostenibilidad ecológica, económica y social en aras de establecer elementos que se ajusten a la preservación de tales áreas y las necesidades de sus habitantes.
+
+De modo que, la investigación se encamina a cerrar la brecha entre las actividades económicas de las comunidades y la conservación del entorno, ya que ésta zona es de importancia estratégica nacional. Conforme a lo anterior, la conveniencia del proyecto radica en cuanto a la posibilidad de determinar si una comunidad pudiera permanecer en zonas de protección y conexas a partir de la generación de actividades en pro de la sostenibilidad del territorio.
+
+						</p>
 	                    </div>
 	                </div>
 	                <div class="col-sm-5 great-support-box wow fadeInUp">
