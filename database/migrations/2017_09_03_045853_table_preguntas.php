@@ -15,7 +15,7 @@ class TablePreguntas extends Migration
     {
         
         Schema::create('preguntas_generales', function (Blueprint $table) {
-            $table->float('id',2,1)->primary();
+            $table->decimal('id',4,1)->primary();
             $table->string('variable',20);
             $table->text('pregunta');
             $table->string('option',50);
