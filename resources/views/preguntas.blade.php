@@ -40,7 +40,7 @@
                       <div class="form-group row">
                         {!! Form::label('option', 'Tipo de campo formulario', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">         
-                        {!! Form::select('option',['text'=>'Texto o numero','select'=>'Lista desplegable','radio'=>'Si o No','checkbox'=>'checklist'], null, ['class'=>'form-control form-control-success','required','placeholder'=>'Seleccione...']) !!}                                          
+                        {!! Form::select('option',['text'=>'Texto o numero','select'=>'Lista desplegable','radio'=>'Si o No','checkbox'=>'checklist','otro'=>'otro'], null, ['class'=>'form-control form-control-success','required','placeholder'=>'Seleccione...']) !!}                                          
                         </div>
                       </div>
                                            
@@ -76,9 +76,9 @@
                      
                       
                        <div class="form-group row">
-                        {!! Form::label('placeholder', 'PlaceHolder', ['class'=>'sr-only col-sm-3 from-control-label']) !!}
+                        {!! Form::label('placeholder','Tipo de dato', ['class'=>' col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">
-                        {!! Form::text('placeholder', 'nada', ['class'=>'sr-only form-control form-control-success', 'placeholder' =>'']) !!}
+                        {!! Form::text('placeholder', 'string', ['class'=>' form-control form-control-success', 'placeholder' =>'']) !!}
                         </div>
                       </div>
                      

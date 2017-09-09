@@ -14,7 +14,7 @@
                     </div>
         <div class="card-body">
                      
-            {!! Form::open(['route'=> 'formulario.store','method'=>'POST','class'=>'form-horizontal'])!!}
+            {!! Form::open(['route'=> 'formulario.index','method'=>'POST','class'=>'form-horizontal'])!!}
                       @foreach ($preguntas as $pregunta)
                       
                      @if ($pregunta->option=="text")

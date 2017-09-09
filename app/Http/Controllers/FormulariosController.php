@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Pregunta;
 class FormulariosController extends Controller
 {
     /**
@@ -13,7 +13,8 @@ class FormulariosController extends Controller
      */
     public function index()
     {
-        //
+        $preguntas=Pregunta::where('class','general')->paginate(150);
+        return view('formularios')->with('preguntas',$preguntas);
     }
    /* @return \Illuminate\Http\Response*/
     

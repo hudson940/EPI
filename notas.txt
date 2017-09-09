@@ -1,0 +1,5 @@
+mysqldump -u root  -p EPI preguntas_generales> preguntas.sql
+
+ALTER TABLE `formulario_forestales` CHANGE `41-finalidad_fores` `41-finalidad_fores` VARCHAR(20) NOT NULL;
+ALTER TABLE `formulario_forestales` CHANGE `39-area_forestal` `39-area_forestal` DECIMAL(10,2) NOT NULL;
+ALTER TABLE `formulario_forestales` CHANGE `39-area_forestal` `39-area_forestal` DECIMAL(10,2) NOT NULL;

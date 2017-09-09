@@ -31,6 +31,8 @@ Route::resource('formularios', 'FormulariosController');
 Route::resource('formulario', 'FormularioController');
 
 Route::post('formulario','FormularioController@storef' )->name('formulario.storef');
+Route::post('formulario','FormularioController@storec' )->name('formulario.storec');
+
 
 
 

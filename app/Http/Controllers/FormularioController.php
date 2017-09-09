@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Formulario;
 use App\Pregunta;
 use Illuminate\Http\Request;
-use FormularioForestal;
+use App\FormularioForestal;
 use App\Cultivo;
-use FormularioCultivo;
-use FormularioGeneral;
+use App\FormularioCultivo;
+use App\FormularioGeneral;
 
 use Illuminate\Support\Facades\DB;
 class FormularioController extends Controller
@@ -25,9 +25,9 @@ class FormularioController extends Controller
         return view('formulario')->with('preguntas',$preguntas);
     }
     public function cultivos()
-    {
+    {   $cultivos=Cultivo::all();
         $preguntasE=Pregunta::where('class','agricola')->paginate(50);
-        return view('formulario-cultivos')->with('preguntasE',$preguntasE);
+        return view('formulario-cultivos')->with('cultivos',$cultivos)->with('preguntasE',$preguntasE);
     }
     public function pecuario()
     {
@@ -70,8 +70,15 @@ class FormularioController extends Controller
     {
         $forestal= new FormularioForestal($request->all());
         $forestal->save();
-        flash("Se ha agreado el cultivo si necestia realcionar otro vuelva a diligenciar el formulario, si ya termino cierre la ventana");
+        flash("Se ha agregado el cultivo correctamente, si necestia realcionar otro vuelva a diligenciar el formulario, si ya termino cierre la ventana");
         return redirect()->route('formulario.forestal');
+    }
+    public function storec(Request $request)
+    {
+        $cultivo= new FormularioCultivo($request->all());
+        $cultivo->save();
+        flash("Se ha agregado el cultivo correctamente, si necestia realcionar otro vuelva a diligenciar el formulario, si ya termino cierre la ventana");
+        return redirect()->route('formulario.cultivos');
     }
     /**
      * Display the specified resource.

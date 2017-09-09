@@ -17,15 +17,23 @@ class FormularioCultivos extends Migration
             $table->increments('id');
             $table->integer('cod_predio')->index();
             $table->string('27-cultivo',60)->unique();
-            $table->float('28-area_sembrada',4,2);
-            $table->enum('29-tipo',['transitorio','permanente']);
-            $table->float('30-cant_cosech',4,2);
-            $table->float('31-duracion',4,2);
-            $table->enum('32-finalidad',['venta','auto-consumo']);
-            $table->float('33-cant_autoC',4,2);
-            $table->float('34-area_autoC',4,2);
-            $table->float('35-productividad',8,2);
-            $table->enum('36-tipo_semilla',['certificada','no-certificada','tradicional','no-sabe']);
+            $table->decimal('28-area_sembrada',10,2)->nullable();
+            
+            $table->integer('29-tipo')->nullable();
+            
+            $table->decimal('30-cant_cosech',10,2)->nullable();
+            
+            $table->decimal('31-duracion',10,2)->nullable();
+            
+            $table->integer('32-finalidad')->nullable();
+            
+            $table->decimal('33-cant_autoC',10,2)->nullable();
+            
+            $table->decimal('34-area_autoC',10,2)->nullable();
+            
+            $table->decimal('35-productividad',10,2)->nullable();
+            
+            $table->string('36-tipo_semilla',90)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

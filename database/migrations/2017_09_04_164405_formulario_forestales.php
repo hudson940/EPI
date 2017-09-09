@@ -17,10 +17,10 @@ class FormularioForestales extends Migration
             $table->increments('id');
             $table->integer('cod_predio')->index();
             $table->string('38-plantacion',60)->unique();
-            $table->float('39-area_forestal',4,2);
-            $table->float('40-Q_plantas',4,2);
-            $table->integer('41-finalidad_fores');
-            $table->float('42-productividad_f',4,2);
+            $table->decimal('39-area_forestal',10,2);
+            $table->integer('40-Q_plantas');
+            $table->string('41-finalidad_fores',20);
+            $table->decimal('42-productividad_f',8,2)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
