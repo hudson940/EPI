@@ -15,7 +15,7 @@
                     </div>
         <div class="card-body">
                      
-            {!! Form::open(['route'=> 'formulario.storef','method'=>'POST','class'=>'form-horizontal'])!!}
+            {!! Form::open(['route'=> 'formularios.store','method'=>'POST','class'=>'form-horizontal'])!!}
               <div class="form-group row">
                         {!!Form::label('cod_predio','Codigo Predio', ['class'=>'col-sm-3 from-control-label']) !!}
                   <div class="col-sm-9">

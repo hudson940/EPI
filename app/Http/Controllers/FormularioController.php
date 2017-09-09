@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Formulario;
 use App\Pregunta;
 use Illuminate\Http\Request;
-use App\FormularioForestal;
+
 use App\Cultivo;
 use App\FormularioCultivo;
 use App\FormularioGeneral;
@@ -66,18 +66,11 @@ class FormularioController extends Controller
     {
         //
     }
-    public function storef(Request $request)
-    {
-        $forestal= new FormularioForestal($request->all());
-        $forestal->save();
-        flash("Se ha agregado el cultivo correctamente, si necestia realcionar otro vuelva a diligenciar el formulario, si ya termino cierre la ventana");
-        return redirect()->route('formulario.forestal');
-    }
-    public function storec(Request $request)
+     public function storec(Request $request)
     {
         $cultivo= new FormularioCultivo($request->all());
         $cultivo->save();
-        flash("Se ha agregado el cultivo correctamente, si necestia realcionar otro vuelva a diligenciar el formulario, si ya termino cierre la ventana");
+        flash("Se ha agregado el cultivo correctamente, si necesita relacionar otro vuelva a diligenciar el formulario, si ya termino cierre la ventana");
         return redirect()->route('formulario.cultivos');
     }
     /**
