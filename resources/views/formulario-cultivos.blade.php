@@ -60,9 +60,10 @@
                       <div class="form-group row">
                        {!!Form::label($preguntaE->variable,$preguntaE->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
                       <div class="col-sm-9">
-                      {!! Form::radio($preguntaE->variable, '1','1') !!} Si
-                       
-                       {!! Form::radio($preguntaE->variable, '0') !!} No
+                              @php $array = explode(',', $preguntaE->html); $n=count($array) @endphp
+                  @for ($i=0;$i<$n;$i++)
+                   {!! Form::radio($preguntaE->variable, $i+1) !!} {{$array[$i]}}
+                  @endfor
                        
                       </div></div>
                               @elseif ($preguntaE->option=="checkbox")
@@ -72,7 +73,10 @@
                   @php $array = explode(',', $preguntaE->html); $n=count($array) @endphp
                   @for ($i=0;$i<$n;$i++)
                    {!! Form::checkbox($preguntaE->variable, $i+1) !!} {{$array[$i]}}
-                  @endfor   </div></div>
+                  @endfor 
+                   {!!Form::label($preguntaE->variable,'Si en la pregunta '.$preguntaE->id.' la respuesta es mas de una opcion, escriba los numeros de la opcion separados por comas', ['class'=>'col-sm-3 from-control-label']) !!}  
+                  {!! Form::text($preguntaE->variable, null, ['class'=>'form-control form-control-success','placeholder'=>'Ej. 1,2,3']) !!}
+                     </div></div>
                       @endif
                
                       

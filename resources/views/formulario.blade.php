@@ -3,6 +3,7 @@
 @section('dashboard','Formulario')
 @section('contenido')
 <div class="card">
+        @include('flash::message') 
                     <div class="card-close">
                       <div class="dropdown">
                         <button type="button" id="closeCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
@@ -14,12 +15,12 @@
                     </div>
         <div class="card-body">
                      
-            {!! Form::open(['route'=> 'formulario.index','method'=>'POST','class'=>'form-horizontal'])!!}
+            {!! Form::open(['route'=> 'formulario.store','method'=>'POST','class'=>'form-horizontal'])!!}
                       @foreach ($preguntas as $pregunta)
                       
                      @if ($pregunta->option=="text")
                      <div class="form-group row">
-                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}
+                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}
                   <div class="col-sm-9">
                         
                         {!! Form::text($pregunta->variable, null, ['class'=>'form-control form-control-success', 
@@ -28,7 +29,7 @@
                       </div>
                       @elseif ($pregunta->option=="select")
                     <div class="form-group row">
-                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}
+                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}
                   <div class="col-sm-9">
                   
                   <select class="{{'form-control form-control-success'}}" required="{{$pregunta->required}}"  name="{{$pregunta->variable}}">{!!html_entity_decode($pregunta->defecto, ENT_QUOTES, 'ISO-8859-1')!!}</select>
@@ -37,29 +38,32 @@
                       </div>
                       @elseif ($pregunta->option=="radio")
                       <div class="form-group row">
-                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
-                      {!! Form::radio($pregunta->variable, '1','1') !!} Si
-                       
-                       {!! Form::radio($pregunta->variable, '0') !!} No
-                       
+                       @php $array = explode(',', $pregunta->html); $n=count($array) @endphp
+                  @for ($i=0;$i<$n;$i++)
+                   {!! Form::radio($pregunta->variable, $i+1) !!} {{$array[$i]}}
+                  @endfor
+                
                       </div></div>
 
                         @elseif ($pregunta->option=="checkbox")
               <div class="form-group row">
-                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
                   @php $array = explode(',', $pregunta->html); $n=count($array) @endphp
                   @for ($i=0;$i<$n;$i++)
-                   {!! Form::checkbox($pregunta->variable, $i+1) !!} {{$array[$i]}}
-                  @endfor
+                  <i class="fa fa-circle-o-notch" aria-hidden="true">{{ $array[$i]}}</i>
+                  @endfor    {!!Form::label($pregunta->variable,'Responda la pregunta '.$pregunta->id.' en el siguiente recuadro escribiendo solo el numero de la opcion, si la respuesta es mas de una opcion, escriba los numeros de la opcion separados por comas', ['class'=>'col-sm-8 from-control-label']) !!}  
+                  {!! Form::text($pregunta->variable, null, ['class'=>'form-control form-control-success','required','placeholder'=>'Ej. 1,2,3']) !!}
+                  
                    </div></div>
                   
                    
               
                       @elseif ($pregunta->option=="agricola")
                       <div class="form-group row">
-                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
                       {!! Form::radio($pregunta->variable, '1','1') !!} (Si, <a href="{{'formulario-cultivos'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=500'); return false;">Relacione </a>
                        
@@ -67,7 +71,7 @@
                      </div></div>
                      @elseif ($pregunta->option=="forestal")
                       <div class="form-group row">
-                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
                       {!! Form::radio($pregunta->variable, '1','1') !!}{{ '(Si,'}} <a href="{{'formulario-forestal'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=500'); return false;">Relacione </a>)
                        
@@ -77,7 +81,7 @@
                       </div></div>
                        @elseif ($pregunta->option=="otropecuario")
                       <div class="form-group row">
-                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
                       {!! Form::radio($pregunta->variable, '1','1') !!} (Si <a href="{{'formulario-pecuario'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=500'); return false;">Relacione Actividades</a>)
                        
@@ -85,7 +89,7 @@
 
                        @elseif ($pregunta->option=="noagropecuario")
                       <div class="form-group row">
-                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-3 from-control-label']) !!}  
+                       {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
                       {!! Form::radio($pregunta->variable, '1','1') !!} (Si <a href="{{'formulario-no-agropecuario'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=500'); return false;">Relacione Actividades</a>)
                        
@@ -107,7 +111,7 @@
                         </div>
                                                   
                     {!! Form::close() !!}
-                     @include('flash::message')     
+                 
                      </div>
 </div>
 @endsection

@@ -64,7 +64,10 @@ class FormularioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $general= new Formulario($request->all());
+        $general->save();
+        flash("Se ha agregado el formulario correctamente, si necesita relacionar otro predio vuelva a diligenciar el formulario, si ya termino cierre la ventana");
+        return redirect()->route('formulario.index');
     }
      public function storec(Request $request)
     {

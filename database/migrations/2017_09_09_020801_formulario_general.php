@@ -29,7 +29,7 @@ class FormularioGeneral extends Migration
             
             $table->integer('6-num_tel')->nullable();
             
-            $table->integer('7-rel_act')->nullable();
+            $table->bigInteger('7-rel_act')->nullable();
             
             $table->integer('8-p_act-agr')->nullable();
             
@@ -111,7 +111,7 @@ class FormularioGeneral extends Migration
             
             $table->string('69_proteccion_agua',90)->nullable();
             
-            $table->integer('70_prod_bos_par')->nullable();
+            $table->string('70_prod_bos_par',90)->nullable();
             
             $table->integer('71_cob_veg')->nullable();
             
@@ -172,7 +172,7 @@ class FormularioGeneral extends Migration
             $table->integer('99_asociacion')->nullable();
             
             $table->integer('100-satisfaccion')->nullable();
-            
+            $table->textarea('observaciones')->nullable();
             $table->rememberToken();
             $table->timestamps();
             
