@@ -13,7 +13,7 @@ return array(
     'App\\Formulario' => $baseDir . '/app/Formulario.php',
     'App\\FormularioCultivo' => $baseDir . '/app/FormularioCultivo.php',
     'App\\FormularioForestal' => $baseDir . '/app/FormularioForestal.php',
-    'App\\FormularioGeneral' => $baseDir . '/app/FormularioGeneral.php',
+    'App\\FormularioPecuario' => $baseDir . '/app/FormularioPecuario.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',

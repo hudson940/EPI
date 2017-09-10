@@ -344,7 +344,7 @@ class ComposerStaticInit6779b7850272204c476d93413adb581b
         'App\\Formulario' => __DIR__ . '/../..' . '/app/Formulario.php',
         'App\\FormularioCultivo' => __DIR__ . '/../..' . '/app/FormularioCultivo.php',
         'App\\FormularioForestal' => __DIR__ . '/../..' . '/app/FormularioForestal.php',
-        'App\\FormularioGeneral' => __DIR__ . '/../..' . '/app/FormularioGeneral.php',
+        'App\\FormularioPecuario' => __DIR__ . '/../..' . '/app/FormularioPecuario.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',

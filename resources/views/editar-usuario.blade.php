@@ -19,7 +19,7 @@
         <div class="card-body">
                      
                     
-                      {!! Form::open(['route'=> 'usuarios.update','method'=>'PUT','class'=>'form-horizontal'])!!}
+                      {!! Form::open(['route'=> ['usuarios.update',$user->id],'method'=>'PUT','class'=>'form-horizontal'])!!}
                       <div class="form-group row">
                         {!! Form::label('name', 'Nombre', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">
@@ -31,7 +31,7 @@
                       <div class="form-group row">
                         {!! Form::label('rol', 'Rol', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">         
-                        {!! Form::select('rol',['investigador'=>'Investigador','estudiante'=>'Estudiante'], $user->rol, ['class'=>'form-control form-control-success','required','placeholder'=>'Seleccione...']) !!}                                          
+                        {!! Form::select('rol',['investigador'=>'Investigador','estudiante'=>'Estudiante','experto'=>'Experto'], $user->rol, ['class'=>'form-control form-control-success','required','placeholder'=>'Seleccione...']) !!}                                          
                         </div>
                       </div>
                       <div class="form-group row">
@@ -43,7 +43,7 @@
                       
                       <div class="form-group row">       
                           <div class="col-sm-9 offset-sm-3">
-                      {!! Form::submit('Crear Usuario', ['class'=>'btn btn-primary']) !!}
+                      {!! Form::submit('Editar Usuario', ['class'=>'btn btn-primary']) !!}
                        </div>
                         </div>
                     </div>
@@ -52,5 +52,5 @@
                      
                     
     </div>
-
+@endif
 @endsection

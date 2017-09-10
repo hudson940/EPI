@@ -122,6 +122,7 @@ class FormularioGeneral extends Migration
             $table->integer('74_rot_cultivos')->nullable();
             
             $table->integer('75_act_sostenible')->nullable();
+            $table->integer('75-1-escala')->nullable();
             
             $table->string('76_act_no-agro',90)->nullable();
             
@@ -172,7 +173,7 @@ class FormularioGeneral extends Migration
             $table->integer('99_asociacion')->nullable();
             
             $table->integer('100-satisfaccion')->nullable();
-            $table->textarea('observaciones')->nullable();
+            $table->text('101-observaciones')->nullable();
             $table->rememberToken();
             $table->timestamps();
             

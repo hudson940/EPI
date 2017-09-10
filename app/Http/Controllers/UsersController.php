@@ -78,7 +78,7 @@ class UsersController extends Controller
         $user = User::find($id);
         $user->name= $request->name;
         $user->rol=$request->rol;
-        $user->email=$request->emai;
+        $user->email=$request->email;
         $user->save();
         flash("el Usuario ".$user->name." ha sido editado");   
         return redirect()->route('usuarios.index');

@@ -31,7 +31,7 @@
                       <div class="form-group row">
                         {!! Form::label('rol', 'Rol', ['class'=>'col-sm-3 from-control-label']) !!}
                         <div class="col-sm-9">         
-                        {!! Form::select('rol',['investigador'=>'Investigador','estudiante'=>'Estudiante'], null, ['class'=>'form-control form-control-success','required','placeholder'=>'Seleccione...']) !!}                                          
+                        {!! Form::select('rol',['investigador'=>'Investigador','evaluador'=>'Evaluador','estudiante'=>'Estudiante'], null, ['class'=>'form-control form-control-success','required','placeholder'=>'Seleccione...']) !!}                                          
                         </div>
                       </div>
                       <div class="form-group row">
