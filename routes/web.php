@@ -29,9 +29,10 @@ Route::resource('usuarios', 'UsersController');
 Route::resource('preguntas','PreguntasController');
 Route::resource('formularios', 'FormulariosController');
 Route::resource('formulario', 'FormularioController');
-Route::post('formulario','FormularioController@storec' )->name('formulario.storec');
+Route::post('formularioc','FormularioC@store' )->name('formulario.storec');
 Route::post('formulario','FormularioController@store' )->name('formulario.store');
-
+Route::post('formulariop','Formulariop@store' )->name('formularios.storep');
+Route::post('formularios','FormulariosController@store' )->name('formularios.store');
 
 
 Auth::routes();

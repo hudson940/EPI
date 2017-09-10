@@ -65,7 +65,7 @@
                       <div class="form-group row">
                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
-                      {!! Form::radio($pregunta->variable, '1','1') !!} (Si, <a href="{{'formulario-cultivos'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=500'); return false;">Relacione </a>
+                      {!! Form::radio($pregunta->variable, '1','1') !!} (Si, <a href="{{'formulario-cultivos'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=1000'); return false;">Relacione </a>
                        
                       {!! Form::radio($pregunta->variable, '0')!!}<span>(No, continue)</span>
                      </div></div>
@@ -73,7 +73,7 @@
                       <div class="form-group row">
                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
-                      {!! Form::radio($pregunta->variable, '1','1') !!}{{ '(Si,'}} <a href="{{'formulario-forestal'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=500'); return false;">Relacione </a>)
+                      {!! Form::radio($pregunta->variable, '1','1') !!}{{ '(Si,'}} <a href="{{'formulario-forestal'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=1000'); return false;">Relacione </a>)
                        
                        {!! Form::radio($pregunta->variable, '0') !!}<span>(No, continue)</span>
 
@@ -83,7 +83,7 @@
                       <div class="form-group row">
                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
-                      {!! Form::radio($pregunta->variable, '1','1') !!} (Si <a href="{{'formulario-pecuario'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=500'); return false;">Relacione Actividades</a>)
+                      {!! Form::radio($pregunta->variable, '1','1') !!} (Si <a href="{{'formulario-pecuario'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=1000'); return false;">Relacione Actividades</a>)
                        
                        {!! Form::radio($pregunta->variable, '0') !!} <span>(No, continue)</span> </div></div>
 

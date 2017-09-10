@@ -7,7 +7,8 @@ use App\Pregunta;
 use Illuminate\Http\Request;
 
 use App\Cultivo;
-use App\FormularioCultivo;
+
+
 use App\FormularioGeneral;
 
 use Illuminate\Support\Facades\DB;
@@ -69,13 +70,8 @@ class FormularioController extends Controller
         flash("Se ha agregado el formulario correctamente, si necesita relacionar otro predio vuelva a diligenciar el formulario, si ya termino cierre la ventana");
         return redirect()->route('formulario.index');
     }
-     public function storec(Request $request)
-    {
-        $cultivo= new FormularioCultivo($request->all());
-        $cultivo->save();
-        flash("Se ha agregado el cultivo correctamente, si necesita relacionar otro vuelva a diligenciar el formulario, si ya termino cierre la ventana");
-        return redirect()->route('formulario.cultivos');
-    }
+    
+  
     /**
      * Display the specified resource.
      *

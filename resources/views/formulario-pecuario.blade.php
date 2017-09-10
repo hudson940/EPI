@@ -15,7 +15,15 @@
                     </div>
         <div class="card-body">
                      
-            {!! Form::open(['route'=> 'formularios.store','method'=>'POST','class'=>'form-horizontal'])!!}
+            {!! Form::open(['route'=> 'formularios.storep','method'=>'POST','class'=>'form-horizontal'])!!}
+                       <div class="form-group row">
+                        {!!Form::label('cod_predio','Codigo Predio', ['class'=>'col-sm-3 from-control-label']) !!}
+                  <div class="col-sm-9">
+                        
+                        {!! Form::text('cod_predio', null, ['class'=>'form-control form-control-success', 
+                        'required']) !!}
+                        </div>
+                      </div>
                       @foreach ($preguntasE as $preguntaE)
                      @if ($preguntaE->option=="text")
                      <div class="form-group row">

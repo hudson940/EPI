@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Pregunta;
 use App\FormularioForestal;
+
 class FormulariosController extends Controller
 {
     /**
@@ -43,7 +44,7 @@ class FormulariosController extends Controller
         return redirect()->route('formulario.forestal');
   
     }
-
+    
     /**
      * Display the specified resource.
      *
