@@ -29,7 +29,7 @@ class FormularioGeneral extends Migration
             
             $table->integer('6-num_tel')->nullable();
             
-            $table->bigInteger('7-rel_act')->nullable();
+            $table->integer('7-rel_act')->nullable();
             
             $table->integer('8-p_act-agr')->nullable();
             
@@ -111,7 +111,7 @@ class FormularioGeneral extends Migration
             
             $table->string('69_proteccion_agua',90)->nullable();
             
-            $table->string('70_prod_bos_par',90)->nullable();
+            $table->integer('70_prod_bos_par')->nullable();
             
             $table->integer('71_cob_veg')->nullable();
             
@@ -122,25 +122,40 @@ class FormularioGeneral extends Migration
             $table->integer('74_rot_cultivos')->nullable();
             
             $table->integer('75_act_sostenible')->nullable();
+            
             $table->integer('75-1-escala')->nullable();
             
             $table->string('76_act_no-agro',90)->nullable();
             
             $table->integer('77_traba_perm_AA')->nullable();
             
+            $table->integer('77-1_mujer_perm_AA')->nullable();
+            
             $table->integer('78_trab_hog_prod_AA')->nullable();
+            
+            $table->integer('78-1mujhog_prodAA')->nullable();
             
             $table->integer('79_trab_hog_asalar')->nullable();
             
+            $table->integer('79-1muj_hog_asalar')->nullable();
+            
             $table->integer('80_jorn_AA')->nullable();
+            
+            $table->integer('80-1mujer_jorn_AA')->nullable();
             
             $table->decimal('81_horas_AA',10,2)->nullable();
             
             $table->integer('82_trab_perma_ANA')->nullable();
             
+            $table->integer('82_1muj_perma_ANA')->nullable();
+            
             $table->integer('83_trab_hog_prod_ANA')->nullable();
             
+            $table->integer('83-1_muj_hog_pr_ANA')->nullable();
+            
             $table->integer('84_asal_ANA')->nullable();
+            
+            $table->integer('84_1-muj-asal_ANA')->nullable();
             
             $table->integer('85_jornal_ANA')->nullable();
             
