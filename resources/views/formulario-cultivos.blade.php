@@ -17,17 +17,17 @@
                      
             {!! Form::open(['route'=> 'formulario.storec','method'=>'POST','class'=>'form-horizontal'])!!}
                      <div class="form-group row">
-                        {!!Form::label('cod_predio','Codigo Predio', ['class'=>'col-sm-3 from-control-label']) !!}
+                        {!!Form::label('P1_cod_pred','Codigo Predio', ['class'=>'col-sm-3 from-control-label']) !!}
                   <div class="col-sm-9">
                         
-                        {!! Form::text('cod_predio', null, ['class'=>'form-control form-control-success', 
+                        {!! Form::text('P1_cod_pred', null, ['class'=>'form-control form-control-success', 
                         'required']) !!}
                         </div>
                       </div>
                         <div class="form-group row">
-                        {!!Form::label('27-cultivo','27. Nombre del cultivo ', ['class'=>'col-sm-3 from-control-label']) !!}
+                        {!!Form::label('P27_cultivo','27. Nombre del cultivo ', ['class'=>'col-sm-3 from-control-label']) !!}
                   <div class="col-sm-9">
-                   <select name="27-cultivo" class="form-control form-control-success" >
+                   <select name="P_27-cultivo" class="form-control form-control-success" >
                           <option value="0">Seleccione...</option>
                         @foreach ($cultivos as $cultivo) 
                           <option value={!!$cultivo->Cultivo_plantacion!!}>{!!$cultivo->Cultivo_plantacion!!}</option>

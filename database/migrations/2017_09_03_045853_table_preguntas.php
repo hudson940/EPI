@@ -13,7 +13,7 @@ class TablePreguntas extends Migration
      */
     public function up()
     {
-        
+      /*  
         Schema::create('preguntas_generales', function (Blueprint $table) {
             $table->decimal('id',4,1)->primary();
             $table->string('variable',20);
@@ -26,7 +26,7 @@ class TablePreguntas extends Migration
             $table->string('placeholder',30);
             
               //
-        });
+        });*/
         
     }
 
@@ -38,7 +38,7 @@ class TablePreguntas extends Migration
     public function down()
     {
         
-       Schema::drop('preguntas_generales');
+       //Schema::drop('preguntas_generales');
         
     }
 }

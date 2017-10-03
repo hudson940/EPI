@@ -15,12 +15,16 @@ class FormularioForestales extends Migration
     {
         Schema::create('formulario_forestales', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('cod_predio')->index();
-            $table->string('38-plantacion',60)->unique();
-            $table->decimal('39-area_forestal',10,2);
-            $table->integer('40-Q_plantas');
-            $table->string('41-finalidad_fores',20);
-            $table->decimal('42-productividad_f',8,2)->nullable();
+            $table->integer('P1_cod_pred');
+            $table->string('P38_plantacion',90)->nullable();
+            
+            $table->decimal('P39_area_forestal',10,2)->nullable();
+            
+            $table->integer('P40_Q_plantas')->nullable();
+            
+            $table->integer('P41_finalidad_fores')->nullable();
+            
+            $table->decimal('P42_productividad_f',10,2)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

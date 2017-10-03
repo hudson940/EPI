@@ -16,20 +16,19 @@ class FormularioPecuarios extends Migration
         Schema::create('formulario_pecuarios', function (Blueprint $table) {
 
             $table->increments('id');
-            $table->integer('cod_predio')->index();
-            $table->string('54-otro-pecuario',90)->nullable();
+            $table->string('P54_otro_pecuario',90)->nullable();
             
-            $table->integer('55-act-pecuaria')->nullable();
+            $table->integer('P55_act_pecuaria')->nullable();
             
-            $table->decimal('56-Area-op',10,2)->nullable();
+            $table->decimal('P56_Area_op',10,2)->nullable();
             
-            $table->integer('57-machos')->nullable();
+            $table->integer('P57_machos')->nullable();
             
-            $table->integer('57-1-hembras-op')->nullable();
+            $table->integer('P57_1_hembras_op')->nullable();
             
-            $table->integer('58-final-op')->nullable();
+            $table->integer('P58_final_op')->nullable();
             
-            $table->decimal('59-duracion-op',10,2)->nullable();
+            $table->decimal('P59_duracion_op',10,2)->nullable();
             $table->rememberToken();
             $table->timestamps();
             } );

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class FormularioCultivo extends Model
 {   protected $table='formulario_cultivos';
-    protected $fillable=[ 'cod_predio','27-cultivo', '28-area_sembrada', '29-tipo', '30-cant_cosech', '31-duracion', '32-finalidad', '33-cant_autoC', '34-area_autoC', '35-productividad', '36-tipo_semilla' ];
+    protected $fillable=[ 'P1_cod_pred','P27_cultivo', 'P28_area_sembrada', 'P29_tipo', 'P30_cant_cosech', 'P31_duracion', 'P32_finalidad', 'P33_cant_autoC', 'P34_area_autoC', 'P35_productividad', 'P36_tipo_semilla', ];
 }

@@ -17,16 +17,16 @@
                      
             {!! Form::open(['route'=> 'formularios.store','method'=>'POST','class'=>'form-horizontal'])!!}
               <div class="form-group row">
-                        {!!Form::label('cod_predio','Codigo Predio', ['class'=>'col-sm-3 from-control-label']) !!}
+                        {!!Form::label('P1_cod_predio','Codigo Predio', ['class'=>'col-sm-3 from-control-label']) !!}
                   <div class="col-sm-9">
                         
-                        {!! Form::text('cod_predio', null, ['class'=>'form-control form-control-success', 
+                        {!! Form::text('P1_cod_predio', null, ['class'=>'form-control form-control-success', 
                         'required']) !!}
                         </div>
                       </div>
                    
                     <div class="form-group row">
-                        {!!Form::label('38-plantacion','38. Plantación o bosque forestal ', ['class'=>'col-sm-3 from-control-label']) !!}
+                        {!!Form::label('P38_plantacion','38. Plantación o bosque forestal ', ['class'=>'col-sm-3 from-control-label']) !!}
                   <div class="col-sm-9">
                    <select name="38-plantacion" class="form-control form-control-success" >
                           <option value="0">Seleccione...</option>

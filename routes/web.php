@@ -34,6 +34,8 @@ Route::post('formulario','FormularioController@store' )->name('formulario.store'
 Route::post('formulariop','Formulariop@store' )->name('formularios.storep');
 Route::post('formularios','FormulariosController@store' )->name('formularios.store');
 
+Route::resource('respuestas', 'RespuestasController');
+
 
 Auth::routes();
 
