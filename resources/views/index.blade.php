@@ -37,10 +37,10 @@
                     <div class="icon bg-violet"><i class="icon-screen"></i></div>
                     <div class="title"><span>Total<br>de Respuestas</span>
                       <div class="progress">
-                        <div role="progressbar" style="width: 1%; height: 4px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
+                        <div role="progressbar" style="width:{{$respuestas->count()/50*100}}%; height: 4px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
                       </div>
                     </div>
-                    <div class="number"><strong>0</strong></div>
+                    <div class="number"><strong>{{$respuestas->count()}}</strong></div>
                   </div>
                 </div>
 

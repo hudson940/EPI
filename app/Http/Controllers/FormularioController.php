@@ -26,7 +26,7 @@ class FormularioController extends Controller
         return view('formulario')->with('preguntas',$preguntas);
     }
     public function cultivos()
-    {   $cultivos=Cultivo::all();
+    {   $cultivos=Cultivo::orderBy('Cultivo_plantacion','ASC')->get();
         $preguntasE=Pregunta::where('class','agricola')->paginate(50);
         return view('formulario-cultivos')->with('cultivos',$cultivos)->with('preguntasE',$preguntasE);
     }
