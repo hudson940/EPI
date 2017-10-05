@@ -405,9 +405,9 @@ De modo que, la investigación se encamina a cerrar la brecha entre las activida
 	                    <h3>Anderson Martinez</h3>
 	                    <p>Estudiante de Administración de Empresas y Economía</p>
 	                    <div class="about-us-social">
-		                	<a href="#"><i class="fa fa-facebook"></i></a>
-		                	<a href="#"><i class="fa fa-dribbble"></i></a>
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
+		                	<a href="https://www.facebook.com/davidshudson"><i class="fa fa-facebook"></i></a>
+		                	<a href="http://paginaswebvillavicencio.tk"><i class="fa fa-dribbble"></i></a>
+		                    <a href="https://twitter.com/mdavidhudson"><i class="fa fa-twitter"></i></a>
 		                </div>
 	                </div>
 	                <div class="col-sm-4 about-us-box wow fadeInDown">
@@ -452,7 +452,7 @@ De modo que, la investigación se encamina a cerrar la brecha entre las activida
 	            </div>
 	            <div class="row">
                     <div class="col-sm-12 footer-copyright">
-                    	&copy; Jedy Bootstrap Template by <a href="http://azmind.com">Azmind</a>.
+                    	&copy; Desarrollado por <a href="http://paginaswebvillavicencio.tk">Anderson Martinez</a> Bootstrap Template by <a href="http://azmind.com">Azmind</a>.
                     </div>
                 </div>
 	        </div>

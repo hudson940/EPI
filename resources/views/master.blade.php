@@ -121,7 +121,7 @@
                   <p>Epi Sanjuanito &copy; 2017-2019</p>
                 </div>
                 <div class="col-sm-6 text-right">
-                  <p>Desarrollado por Anderson Martinez, dieño de <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
+                 	&copy; Desarrollado por <a href="http://paginaswebvillavicencio.tk">Anderson Martinez</a>, dieño de <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
                 </div>
               </div>
             </div>
