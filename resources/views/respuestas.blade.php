@@ -40,7 +40,7 @@
 								  <a href="{{route('respuestas.show',$respuesta->id)}}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </a>
 								 </td><td>
                    {!! Form::open(['route'=> ['respuestas.destroy',$respuesta->id],'method'=>'DELETE','class'=>'hidden'])!!}                    
-                  <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </button>
+                  <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Estás seguro que deseas eliminar el registro?');"><i class="fa fa-times"></i> </button>
 											{!! Form::close() !!}
   
                             </td>

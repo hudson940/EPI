@@ -31,7 +31,7 @@ Route::resource('formularios', 'FormulariosController');
 Route::resource('formulario', 'FormularioController');
 Route::post('formularioc','FormularioC@store' )->name('formulario.storec');
 Route::post('formulario','FormularioController@store' )->name('formulario.store');
-Route::post('formulariop','Formulariop@store' )->name('formularios.storep');
+Route::post('formulariop','FormularioP@store' )->name('formularios.storep');
 Route::post('formularios','FormulariosController@store' )->name('formularios.store');
 
 Route::resource('respuestas', 'RespuestasController');

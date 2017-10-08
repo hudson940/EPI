@@ -20,7 +20,7 @@
                         {!!Form::label('P1_cod_predio','Codigo Predio', ['class'=>'col-sm-3 from-control-label']) !!}
                   <div class="col-sm-9">
                         
-                        {!! Form::text('P1_cod_predio', null, ['class'=>'form-control form-control-success', 
+                        {!! Form::text('P1_cod_pred', null, ['class'=>'form-control form-control-success', 
                         'required']) !!}
                         </div>
                       </div>

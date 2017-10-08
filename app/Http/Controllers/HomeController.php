@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Pregunta;
 use App\User;
+use App\Formulario;
 class HomeController extends Controller
 {
     /**
@@ -26,6 +27,8 @@ class HomeController extends Controller
     {
         $preguntas=Pregunta::all();
         $usuarios=User::all();
-        return view('index')->with('preguntas',$preguntas)->with('usuarios',$usuarios);
+        $respuestas=Formulario::all();
+        return view('index')->with('preguntas',$preguntas)->with('usuarios',$usuarios)->with('respuestas',$respuestas);
+       
     }
 }

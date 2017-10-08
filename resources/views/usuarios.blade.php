@@ -89,7 +89,7 @@
 								  <a href="{{route('usuarios.edit',$User->id)}}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </a>
 								 </td><td>
                    {!! Form::open(['route'=> ['usuarios.destroy',$User->id],'method'=>'DELETE','class'=>'hidden'])!!}                    
-                  <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </button>
+                  <button onclick="return confirm('Estás seguro que deseas eliminar el registro?');" type="submit" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> </button>
 											{!! Form::close() !!}
   
                             </td>
