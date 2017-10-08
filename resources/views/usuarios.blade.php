@@ -2,9 +2,8 @@
 @section('titulo','Usuarios')
 @section('dashboard','Usuarios')
 @section('contenido')
-@if ( Auth::user()->rol=='estudiante')
-        <div class="card"> <h3> No esta autorizado para editar usuarios</h3></div>
-       @else 
+@if ( Auth::user()->rol=='investigador')
+      
        @include('flash::message')
 <div class="card">
                     <div class="card-close">
@@ -102,5 +101,8 @@
                       {!!$Users->links()!!}
                     </div>
                   </div>
+                  @else 
+                    <div class="card"> <h3> No esta autorizado para editar usuarios</h3></div>
+       
               @endif  
 @endsection

@@ -3,9 +3,8 @@
 @section('dasboard','Respuestas')
 
 @section ('contenido')
- @if ( Auth::User()->rol=='estudiante')
-        <div class="card"> <h3> No esta autorizado para ver Respuestas</h3></div>
-       @else 
+ @if ( Auth::User()->rol=='investigador')
+      
        @include('flash::message')
 
 
@@ -53,6 +52,8 @@
                       {!!$respuestas->links()!!}
                     </div>
                   </div>
-
+                     @else 
+  <div class="card"> <h3> No esta autorizado para ver Respuestas</h3></div>
+    
  @endif
 @endsection
