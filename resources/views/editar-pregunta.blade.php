@@ -3,9 +3,8 @@
 @section('dasboard','Formulario de Edicion')
 @section ('contenido')
   @include('flash::message')
-  @if ( Auth::user()->rol=='estudiante')
-        <div class="card"> <h3>  No esta autorizado para editar preguntas </h3></div>
-         @else 
+  @if ( Auth::user()->rol=='investigador')
+        
 <div class="card">
                     <div class="card-close">
                       <div class="dropdown">
@@ -92,6 +91,9 @@
                     </div>
                     
                     {!! Form::close() !!}
+                    
+         @else 
+         <div class="card"> <h3>  No esta autorizado para editar preguntas </h3></div>
   @endif                  
                      
     </div>
