@@ -17,7 +17,7 @@
                      
             {!! Form::open(['route'=> 'formulario.store','method'=>'POST','class'=>'form-horizontal'])!!}
             
-            {!! Form::hidden('usuario', Auth::user()->name,  ['class'=>'col-sm-9 from-control-label']) !!}
+            {!! Form::hidden('usuario', Auth::user()->email,  ['class'=>'col-sm-9 from-control-label']) !!}
             
                       @foreach ($preguntas as $pregunta)
                       
