@@ -58,7 +58,7 @@
                   @for ($i=0;$i<$n;$i++)
                   <i class="fa fa-circle-o-notch" aria-hidden="true">{{ $array[$i]}}</i>
                   @endfor    {!!Form::label($pregunta->variable,'Responda la pregunta '.$pregunta->id.' en el siguiente recuadro escribiendo solo el numero de la opcion, si la respuesta es mas de una opcion, escriba los numeros de la opcion separados por comas', ['class'=>'col-sm-8 from-control-label']) !!}  
-                  {!! Form::text($pregunta->variable, null, ['class'=>'form-control form-control-success','required','placeholder'=>'Ej. 1,2,3']) !!}
+                  {!! Form::text($pregunta->variable, null, ['class'=>'form-control form-control-success',{{$pregunta->required}},'placeholder'=>'Ej. 1,2,3']) !!}
                   
                    </div></div>
                   
