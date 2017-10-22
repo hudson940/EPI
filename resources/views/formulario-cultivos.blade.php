@@ -27,7 +27,7 @@
                         <div class="form-group row">
                         {!!Form::label('P27_cultivo','27. Nombre del cultivo ', ['class'=>'col-sm-3 from-control-label']) !!}
                   <div class="col-sm-9">
-                   <select name="P_27-cultivo" class="form-control form-control-success" >
+                   <select name="P27_cultivo" class="form-control form-control-success" >
                           <option value="fríjol">Fríjol</option>
                         @foreach ($cultivos as $cultivo) 
                           <option value={!!$cultivo->Cultivo_plantacion!!}>{!!$cultivo->Cultivo_plantacion!!}</option>
