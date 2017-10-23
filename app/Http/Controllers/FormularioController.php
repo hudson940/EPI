@@ -91,7 +91,7 @@ class FormularioController extends Controller
      */
     public function edit(Formulario $formulario)
     {
-        //
+        
     }
 
     /**
@@ -101,9 +101,18 @@ class FormularioController extends Controller
      * @param  \App\Formulario  $formulario
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Formulario $formulario)
+    public function update(Request $request,  $id)
     {
-        //
+        $formulario= Formulario::find($id);
+        $preguntas=Pregunta::where('class','general')->get();
+        foreach ($preguntas as $pregunta)
+        {
+            $variable=$pregunta->variable;
+            $formulario->$variable=$request->$variable;
+        }
+        $formulario->save();
+        flash("Se ha Editado la respuesta correctamente");
+        return redirect()->route('respuestas.index');
     }
 
     /**

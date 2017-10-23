@@ -26,21 +26,21 @@
                             <th>Encuesta</th>
                             <th>Vereda</th>
                             
-                            <th>Ver</th>
+                            <th>Editar</th>
                           <th>Borrar</th>
                           </tr>
                         </thead>
                         <tbody>
                         @foreach ($respuestas as $respuesta)
                           <tr>
-                            <th scope="row"><a href="{{route('respuestas.show',$respuesta->id)}}">{{$respuesta->P1_cod_pred}}</th>
+                            <th scope="row"><a href="{{route('respuestas.edit',$respuesta->id)}}">{{$respuesta->P1_cod_pred}}</th>
                             <th>{{$respuesta->P2_nom_vereda}}</th>
                            
                             <td> 
-								  <a href="{{route('respuestas.show',$respuesta->id)}}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> </a>
+								  <a href="{{route('respuestas.edit',$respuesta->id)}}" class="btn btn-sm btn-warning">Editar<i class="fa fa-pencil"></i> </a>
 								 </td><td>
                    {!! Form::open(['route'=> ['respuestas.destroy',$respuesta->id],'method'=>'DELETE','class'=>'hidden'])!!}                    
-                  <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Estás seguro que deseas eliminar el registro?');"><i class="fa fa-times"></i> </button>
+                  <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Estás seguro que deseas eliminar el registro?');">Borrar<i class="fa fa-times"></i> </button>
 											{!! Form::close() !!}
   
                             </td>

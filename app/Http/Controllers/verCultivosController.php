@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Formulario;
-use App\Pregunta;
-class RespuestasController extends Controller
+use App\FormularioCultivo;
+class verCultivosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class RespuestasController extends Controller
      */
     public function index()
     {
-         $respuestas=Formulario::orderBy('id','ASC')->paginate(50);
-        return view('respuestas')->with('respuestas',$respuestas);
+       
     }
 
     /**
@@ -47,10 +45,13 @@ class RespuestasController extends Controller
      */
     public function show($id)
     {
-        $verRespuesta= Formulario::find($id);
-        dd($verRespuesta);
-       // return view('encuesta')->with('verRespuesta',$verRespuesta);
+        $cultivos=FormularioCultivo::where('P1_cod_pred','=',$id)->get();
+        
 
+        for ($i=0;$i<count($cultivos);$i++) dd($cultivos[$i]);
+        /* foreach ($cultivos as $cultivo)
+          for ($i=0;$i<10;$i++)
+           dd($cultivo.$cultivo->fillable[$i]);*/
     }
 
     /**
@@ -60,11 +61,8 @@ class RespuestasController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {    $preguntas=Pregunta::where('class','general')->get();
-        $respuesta= Formulario::find($id);
-        return view('editar-formulario')->with('respuesta',$respuesta)
-                ->with('preguntas',$preguntas);
-
+    {
+        //
     }
 
     /**
@@ -87,8 +85,6 @@ class RespuestasController extends Controller
      */
     public function destroy($id)
     {
-        Formulario::destroy($id);
-        flash("la respuesta fue borrado");
-        return redirect()->route('respuestas.index');
+        //
     }
 }

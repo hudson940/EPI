@@ -35,7 +35,7 @@ Route::post('formulariop','FormularioP@store' )->name('formularios.storep');
 Route::post('formularios','FormulariosController@store' )->name('formularios.store');
 
 Route::resource('respuestas', 'RespuestasController');
-
+Route::resource('ver-cultivos', 'verCultivosController');
 
 Auth::routes();
 
