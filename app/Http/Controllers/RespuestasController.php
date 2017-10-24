@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Formulario;
 use App\Pregunta;
 use App\FormularioCultivo;
+use App\FormularioForestal;
 class RespuestasController extends Controller
 {
     /**
@@ -66,8 +67,10 @@ class RespuestasController extends Controller
     {    $preguntas=Pregunta::where('class','general')->get();
         $respuesta= Formulario::where('P1_cod_pred','=',$P1_cod_pred)->first();
         $cultivos=FormularioCultivo::where('P1_cod_pred','=',$P1_cod_pred)->get();
+        $forestales=FormularioForestal::where('P1_cod_pred','=',$P1_cod_pred)->get();
         return view('editar-formulario')->with('respuesta',$respuesta)
-                ->with('preguntas',$preguntas)->with('cultivos',$cultivos);
+                ->with('preguntas',$preguntas)->with('cultivos',$cultivos)
+                ->with('forestales',$forestales);
 
     }
 

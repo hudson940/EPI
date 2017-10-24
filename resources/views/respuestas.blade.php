@@ -24,7 +24,7 @@
                         <thead>
                           <tr>
                             <th>Encuesta</th>
-                            <th>Vereda</th>
+                            <th>Usuario</th>
                             
                             <th>Editar</th>
                           <th>Borrar</th>
@@ -34,7 +34,7 @@
                         @foreach ($respuestas as $respuesta)
                           <tr>
                             <th scope="row"><a href="{{route('respuestas.edit',$respuesta->P1_cod_pred)}}">{{$respuesta->P1_cod_pred}}</th>
-                            <th>{{$respuesta->P2_nom_vereda}}</th>
+                            <th>{{$respuesta->usuario}}</th>
                            
                             <td> 
 								  <a href="{{route('respuestas.edit',$respuesta->P1_cod_pred)}}" class="btn btn-sm btn-warning">Editar<i class="fa fa-pencil"></i> </a>

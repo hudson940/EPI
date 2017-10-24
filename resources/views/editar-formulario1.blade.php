@@ -2,7 +2,6 @@
 @section('titulo','Formulario')
 @section('dashboard','Formulario')
 @section('contenido')
-@if ( Auth::User()->rol=='investigador')
 <div class="card">
         @include('flash::message') 
                     <div class="card-close">
@@ -73,12 +72,13 @@
                       <div class="form-group row">
                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
-                     {!! Form::text($pregunta->variable, $respuesta->$variable, ['class'=>'form-control form-control-success']) !!}
+                      {!! Form::radio($pregunta->variable, '1','1') !!} (Si, <a href="{{'formulario-cultivos'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=1000'); return false;">Relacione </a>
+                       
+                      {!! Form::radio($pregunta->variable, '0')!!}<span>(No, continue)</span>
                      </div>
                      </div>
                     <div class="form-group row"> 
-                    <a href="{{route('formularioc.edit',$respuesta->P1_cod_pred)}}" class="btn btn-sm btn-warning">Editar<i class="fa fa-pencil"></i> </a>
-									
+                   
                     
                      <table class="table table-striped">
                         <thead>
@@ -97,21 +97,37 @@
                           </tr>
                         </thead>
                         <tbody>
-                       @foreach ($cultivos as $cultivo) 
+                         @foreach ($cultivos as $cultivo) 
+                        <form method="PUT" action="{{route('formularioc.update',$cultivo->id)}}" accept-charset="UTF-8" class="form-inline">
+                     
+                     
+                       
+                                   
                           <tr>
-                            <th> {{$cultivo->P27_cultivo}}</th>
-                            <th>{{$cultivo->P28_area_sembrada}}</th>
-                            <th> {{$cultivo->P29_tipo}}</th>
-                            <th>{{$cultivo->P30_cant_cosech}}</th>
-                            <th> {{$cultivo->P31_duracion}}</th>
-                            <th>{{$cultivo->P32_finalidad}}</th>
-                            <th> {{$cultivo->P33_cant_autoC}}</th>
-                            <th>{{$cultivo->P34_area_autoC}}</th>
-                            <th> {{$cultivo->P35_productividad}}</th>
-                            <th>{{$cultivo->P36_tipo_semilla}}</th>
-               
+                            <th> @php $options=['class'=>'form-control'] @endphp
+                            {!! Form::text('P27_cultivo', $cultivo->P27_cultivo, $options) !!}
+                             </th>
+                            <th>{!! Form::text('P28_area_sembrada', $cultivo->P28_area_sembrada, $options) !!}</th>
+                            <th> {!! Form::text('P29_tipo', $cultivo->P29_tipo, $options) !!} </th>
+                            <th> {!! Form::text('P30_cant_cosech', $cultivo->P30_cant_cosech, $options) !!}</th>
+                            <th> {!! Form::text('P31_duracion', $cultivo->P31_duracion, $options) !!} </th>
+                            <th> {!! Form::text('P32_finalidad', $cultivo->P32_finalidad, $options) !!}</th>
+                            <th> {!! Form::text('P33_cant_autoC', $cultivo->P33_cant_autoC, $options) !!} </th>
+                            <th> {!! Form::text('P34_area_autoC', $cultivo->P34_area_autoC, $options) !!}</th>
+                            <th> {!! Form::text('P35_productividad', $cultivo->P35_productividad, $options) !!} </th>
+                            <th> {!! Form::text('P36_tipo_semilla', $cultivo->P36_tipo_semilla, $options) !!}</th>
+                         <td>
+                               
+                               {!! Form::submit('Editar', ['class'=>'btn btn-sm btn-primary']) !!}
+                                      
+                  
+											
+  
+                            </td>
                           
-                          </tr>
+                          
+                          
+                         </tr> </form> 
                          @endforeach
                         </tbody>
                       </table>
@@ -123,56 +139,19 @@
                       <div class="form-group row">
                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
-                     
-                     {!! Form::text($pregunta->variable, $respuesta->$variable, ['class'=>'form-control form-control-success']) !!}
-                     
+                      {!! Form::radio($pregunta->variable, '1','1') !!}{{ '(Si,'}} <a href="{{'formulario-forestal'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=1000'); return false;">Relacione </a>)
+                       
+                       {!! Form::radio($pregunta->variable, '0') !!}<span>(No, continue)</span>
 
                        
                       </div></div>
-                         <div class="form-group row"> 
-                    <a href="{{route('formulariof.edit',$respuesta->P1_cod_pred)}}" class="btn btn-sm btn-warning">Editar<i class="fa fa-pencil"></i> </a>
-									
-                    
-                     <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Plantacion</th>
-                            <th>Area</th>
-                            
-                            <th>N plantas</th>
-                            <th>Finalidad</th>
-                         
-                          <th>Productividad</th>
-                          
-                          </tr>
-                        </thead>
-                        <tbody>
-                       @foreach ($forestales as $cultivo) 
-                          <tr>
-                            <th> {{$cultivo->P38_plantacion}}</th>
-                            <th>{{$cultivo->P39_area_forestal}}</th>
-                            <th> {{$cultivo->P40_Q_plantas}}</th>
-                            <th>{{$cultivo->P41_finalidad_fores}}</th>
-                            <th> {{$cultivo->P42_productividad_f}}</th>
-                            
-                          
-                          </tr>
-                         @endforeach
-                        </tbody>
-                      </table>
-                    
-                     
-
-                     </div>
-
                        @elseif ($pregunta->option=="otropecuario")
                       <div class="form-group row">
                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
                       <div class="col-sm-9">
-                      @if ($respuesta->$variable=1) 
-                      Si @else No @endif
-                      
-                        </div></div>
+                      {!! Form::radio($pregunta->variable, '1','1') !!} (Si <a href="{{'formulario-pecuario'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=1000'); return false;">Relacione Actividades</a>)
+                       
+                       {!! Form::radio($pregunta->variable, '0') !!} <span>(No, continue)</span> </div></div>
 
                        @elseif ($pregunta->option=="noagropecuario")
                       <div class="form-group row">
@@ -201,5 +180,4 @@
                  
                      </div>
 </div>
-@endif
 @endsection
