@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Formulario;
 use App\Pregunta;
+use App\FormularioCultivo;
 class RespuestasController extends Controller
 {
     /**
@@ -47,8 +48,9 @@ class RespuestasController extends Controller
      */
     public function show($id)
     {
-        $verRespuesta= Formulario::find($id);
-        dd($verRespuesta);
+        $cultivos=FormularioCultivo::where('P1_cod_pred','=',$id)->get();
+      //  $respuesta= Formulario::where('P1_cod_pred','=',$id);
+        dd($cultivos);
        // return view('encuesta')->with('verRespuesta',$verRespuesta);
 
     }
@@ -59,11 +61,13 @@ class RespuestasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($P1_cod_pred)
+
     {    $preguntas=Pregunta::where('class','general')->get();
-        $respuesta= Formulario::find($id);
+        $respuesta= Formulario::where('P1_cod_pred','=',$P1_cod_pred)->first();
+        $cultivos=FormularioCultivo::where('P1_cod_pred','=',$P1_cod_pred)->get();
         return view('editar-formulario')->with('respuesta',$respuesta)
-                ->with('preguntas',$preguntas);
+                ->with('preguntas',$preguntas)->with('cultivos',$cultivos);
 
     }
 

@@ -75,7 +75,55 @@
                       {!! Form::radio($pregunta->variable, '1','1') !!} (Si, <a href="{{'formulario-cultivos'}}" target=_blank  onclick="window.open(this.href, this.target, 'width=900,height=1000'); return false;">Relacione </a>
                        
                       {!! Form::radio($pregunta->variable, '0')!!}<span>(No, continue)</span>
-                     </div></div>
+                     </div>
+                     </div>
+                    <div class="form-group row"> 
+                   
+                    
+                     <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Cultivo</th>
+                            <th>Area</th>
+                            
+                            <th>Tipo</th>
+                          <th>Cant Cosechada</th>
+                          <th>Duracion</th>
+                          <th>Finalidad</th>
+                          <th>Cant AutoC</th>
+                          <th>Area AutoC</th>
+                          <th>Productividad<th/>
+                          <th>Tipo Semilla</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                       @foreach ($cultivos as $cultivo) 
+                          <tr>
+                            <th> {{$cultivo->P27_cultivo}}</th>
+                            <th>{{$cultivo->P28_area_sembrada}}</th>
+                            <th> {{$cultivo->P29_tipo}}</th>
+                            <th>{{$cultivo->P30_cant_cosech}}</th>
+                            <th> {{$cultivo->P31_duracion}}</th>
+                            <th>{{$cultivo->P32_finalidad}}</th>
+                            <th> {{$cultivo->P33_cant_autoC}}</th>
+                            <th>{{$cultivo->P34_area_autoC}}</th>
+                            <th> {{$cultivo->P35_productividad}}</th>
+                            <th>{{$cultivo->P36_tipo_semilla}}</th>
+                         <td>
+                                      
+                  <button type="submit" disabled class="btn btn-sm btn-danger" onclick="return confirm('Estás seguro que deseas eliminar el registro?');">Editar<i class="fa fa-times"></i> </button>
+											
+  
+                            </td>
+                          
+                          </tr>
+                         @endforeach
+                        </tbody>
+                      </table>
+                    
+                     
+
+                     </div>
                      @elseif ($pregunta->option=="forestal")
                       <div class="form-group row">
                        {!!Form::label($pregunta->variable,$pregunta->pregunta, ['class'=>'col-sm-9 from-control-label']) !!}  
